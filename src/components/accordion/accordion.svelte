@@ -1,13 +1,33 @@
 <script>
-  import { onMount } from "svelte";
+  import { onMount, createEventDispatcher } from "svelte";
   import UIkit from "uikit";
+
+  const dispatch = createEventDispatcher();
+  let uikitAccordionEl;
+  let id;
 
   onMount(async () => {
     let element = document.getElementById(getId());
-    UIkit.accordion(element, {});
+    uikitAccordionEl = UIkit.accordion(element, {});
+    uikitAccordionEl.$el.addEventListener("beforeshow", event => {
+      dispatch("beforeshow", event);
+    });
+    uikitAccordionEl.$el.addEventListener("show", event => {
+      dispatch("show", event);
+    });
+    uikitAccordionEl.$el.addEventListener("shown", event => {
+      dispatch("shown", event);
+    });
+    uikitAccordionEl.$el.addEventListener("beforehide", event => {
+      dispatch("beforehide", event);
+    });
+    uikitAccordionEl.$el.addEventListener("hide", event => {
+      dispatch("hide", event);
+    });
+    uikitAccordionEl.$el.addEventListener("hide", event => {
+      dispatch("hidden", event);
+    });
   });
-
-  let id;
 
   function getId() {
     if (!id) id = uuidv4();
@@ -21,6 +41,10 @@
         (crypto.getRandomValues(new Uint8Array(1))[0] & (15 >> (c / 4)))
       ).toString(16)
     );
+  }
+
+  export function toggle(index, animate) {
+    uikitAccordionEl.toggle(index, animate);
   }
 </script>
 
