@@ -63,7 +63,7 @@
     <AccordionItem header="2">Test 2</AccordionItem>
     <AccordionItem header="3">Test 3</AccordionItem>
   </Accordion>
-  <h4>Accordion</h4>
+  <h4>Alert</h4>
   <Alert style="danger" showClose="true">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
     tempor incididunt.

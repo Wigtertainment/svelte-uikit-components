@@ -7,6 +7,9 @@
   let uikitAccordionEl;
   let id;
 
+  export let collapsible = false;
+  export let multiple = true;
+
   onMount(async () => {
     let element = document.getElementById(getId());
     uikitAccordionEl = UIkit.accordion(element, {});
@@ -35,11 +38,15 @@
     return id;
   }
 
+  function getOpt() {
+    return `collapsible:${collapsible};multiple:${multiple}`;
+  }
+
   export function toggle(index, animate) {
     uikitAccordionEl.toggle(index, animate);
   }
 </script>
 
-<ul id={getId()} uk-accordion>
+<ul id={getId()} uk-accordion={getOpt()}>
   <slot />
 </ul>

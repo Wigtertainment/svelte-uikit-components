@@ -1,27 +1,40 @@
+import { withKnobs, select } from '@storybook/addon-knobs';
 import { action } from '@storybook/addon-actions';
 
 import Button from '../../src/components/button/button.svelte';
+import ButtonView from "./button-view.svelte";
 
 export default {
-  title: 'Button',
+    title: 'Button',
+    decorators: [withKnobs]
 };
 
-export const text = () => ({
-  Component: Button,
-  props: { text: 'Hello Button' },
-  on: { click: action('clicked') },
-});
+const styles = {
+    'Default button (primary)': 'default',
+    'Primary button (primary)': 'primary',
+    'Secondary button (secondary)': 'secondary',
+    'Danger button (danger)': 'danger',
+    'Text button (ghost)': 'text',
+    'Link button (ghost)': 'link'
+};
 
-export const textWithoutRipple = () => ({
-  Component: Button,
-  props: { text: 'Hello Button', ripple: false },
-  on: { click: action('clicked') },
-});
+const sizes = {
+    Small: 'small',
+    Large: 'large'
+};
 
-export const emoji = () => ({
-  Component: Button,
-  props: {
-    text: '😀 😎 👍 💯',
-  },
-  on: { click: action('clicked') },
+const width = {
+    default: 'default',
+    full: 'full'
+}
+
+export const Default = () => ({
+    Component: ButtonView,
+    props: {
+        text: 'Hello Button',
+        style: select('Button style (style)', styles, 'default'),
+        size: select('Button size (size)', sizes, 'default'),
+        width: select('Button width (width)', width, 'default'),
+    },
+    on: { click: action('clicked') },
 });
