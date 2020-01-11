@@ -16,7 +16,8 @@
   }
 
   onMount(async () => {
-    let element = document.getElementById(getId());
+    let selector = `[data-id='${getId()}']`;
+    let element = document.querySelectorAll(selector);
     let uikitAlertEl = UIkit.alert(element, {
       animation: animation,
       duration: duration
@@ -31,7 +32,7 @@
 </script>
 
 <div
-  id={getId()}
+  data-id={getId()}
   uk-alert
   class:uk-alert-primary={style === 'primary'}
   class:uk-alert-success={style === 'success'}

@@ -11,7 +11,8 @@
   export let multiple = true;
 
   onMount(async () => {
-    let element = document.getElementById(getId());
+    let selector = `[data-id='${getId()}']`;
+    let element = document.querySelectorAll(selector);
     uikitAccordionEl = UIkit.accordion(element, {});
     uikitAccordionEl.$el.addEventListener("beforeshow", event => {
       dispatch("beforeshow", event);
@@ -47,6 +48,6 @@
   }
 </script>
 
-<ul id={getId()} uk-accordion={getOpt()}>
+<ul data-id={getId()} uk-accordion={getOpt()}>
   <slot />
 </ul>

@@ -10,5 +10,9 @@
 </script>
 
 <Content>
-  <Button {text} {style} {size} {width} />
+  <ButtonGroup>
+    <Button {text} {style} {size} {width} />
+    <Button {text} {style} {size} {width} />
+    <Button {text} {style} {size} {width} />
+  </ButtonGroup>
 </Content>

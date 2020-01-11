@@ -1,8 +1,8 @@
 import { withKnobs, select } from '@storybook/addon-knobs';
 import { action } from '@storybook/addon-actions';
 
-import Button from '../../src/components/button/button.svelte';
 import ButtonView from "./button-view.svelte";
+import ButtonGroupView from "./button-group-view.svelte";
 
 export default {
     title: 'Button',
@@ -35,6 +35,16 @@ export const Default = () => ({
         style: select('Button style (style)', styles, 'default'),
         size: select('Button size (size)', sizes, 'default'),
         width: select('Button width (width)', width, 'default'),
+    },
+    on: { click: action('clicked') },
+});
+
+export const ButtonGroup = () => ({
+    Component: ButtonGroupView,
+    props: {
+        text: 'Button',
+        style: select('Button style (style)', styles, 'default'),
+        size: select('Button size (size)', sizes, 'default')
     },
     on: { click: action('clicked') },
 });
