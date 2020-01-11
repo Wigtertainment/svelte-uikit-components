@@ -42,9 +42,6 @@ export const Default = () => ({
 export const ButtonGroup = () => ({
     Component: ButtonGroupView,
     props: {
-        text: 'Button',
-        style: select('Button style (style)', styles, 'default'),
-        size: select('Button size (size)', sizes, 'default')
     },
     on: { click: action('clicked') },
 });

@@ -11,8 +11,8 @@
 
 <Content>
   <ButtonGroup>
-    <Button {text} {style} {size} {width} />
-    <Button {text} {style} {size} {width} />
-    <Button {text} {style} {size} {width} />
+    <Button text="Button 1" style="default" />
+    <Button text="Button 2" style="primary" />
+    <Button text="Button 3" style="danger" />
   </ButtonGroup>
 </Content>
