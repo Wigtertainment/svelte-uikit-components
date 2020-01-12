@@ -9,7 +9,7 @@ export default {
 
 const defaultDate = new Date('2021');
 function myDateKnob(name, defaultValue) {
-    const stringTimestamp = date(name, defaultValuSe)
+    const stringTimestamp = date(name, defaultValue)
     return new Date(stringTimestamp)
 }
 
