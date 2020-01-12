@@ -1,0 +1,42 @@
+<script>
+  import Content from "../content-view.svelte";
+  import Comment from "../../src/components/comment/comment.svelte";
+  import CommentTitle from "../../src/components/comment/comment-title.svelte";
+  import CommentMetaList from "../../src/components/comment/comment-meta-list.svelte";
+  import CommentHeader from "../../src/components/comment/comment-header.svelte";
+  import CommentBody from "../../src/components/comment/comment-body.svelte";
+  import CommentAvatar from "../../src/components/comment/comment-avatar.svelte";
+
+  export let primary = false;
+</script>
+
+<Content>
+  <Comment {primary}>
+    <CommentHeader>
+      <CommentAvatar
+        src={'http://qa-dental.co.uk/wp-content/uploads/2017/02/avatar-man.png'} />
+      <CommentTitle>Max Power</CommentTitle>
+      <CommentMetaList>
+        <li>
+          <a href="#">12 days ago</a>
+        </li>
+        <li>
+          <a href="#">Reply</a>
+        </li>
+      </CommentMetaList>
+    </CommentHeader>
+    <CommentBody>
+      <p>
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+        voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+        amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+        nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+        sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+        rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+        ipsum dolor sit amet.
+      </p>
+    </CommentBody>
+  </Comment>
+</Content>
