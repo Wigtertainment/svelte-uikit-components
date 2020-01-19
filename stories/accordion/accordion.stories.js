@@ -10,8 +10,11 @@ export default {
 
 export const Default = () => ({
     Component: AccordionView,
-    props:{
+    props: {
         collapsible: boolean('All items collapsible (collapsible)', false),
         multiple: boolean('Multiple open items (multiple)', false)
+    },
+    on: {
+        beforeshow: action("beforeshow")
     }
 });
