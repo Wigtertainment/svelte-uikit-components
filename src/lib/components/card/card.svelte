@@ -1,5 +1,5 @@
 <script lang="ts">
-	export let hover: bollean = true;
+	export let hover: boolean = true;
 	export let size: "small" | "large" = "small";
 	export let style: "default" | "primary" | "secondary" = "default";
 </script>

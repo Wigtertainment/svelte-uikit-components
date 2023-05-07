@@ -10,11 +10,11 @@
 		| "text"
 		| "link" = "default";
 	export let size: "small" | "large" = "small";
-	export let width: "deafult" | "full" = "default";
+	export let width: "default" | "full" = "default";
 
 	const dispatch = createEventDispatcher();
 
-	function onClick(event) {
+	function onClick(event: unknown) {
 		dispatch("click", event);
 	}
 </script>

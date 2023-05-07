@@ -22,10 +22,10 @@
 			animation: animation,
 			duration: duration,
 		});
-		uikitAlertEl.$el.addEventListener("beforehide", (event) => {
+		uikitAlertEl.$el.addEventListener("beforehide", (event: unknown) => {
 			dispatch("beforehide", event);
 		});
-		uikitAlertEl.$el.addEventListener("hide", (event) => {
+		uikitAlertEl.$el.addEventListener("hide", (event: unknown) => {
 			dispatch("hide", event);
 		});
 	});
