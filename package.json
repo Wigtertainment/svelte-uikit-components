@@ -1,6 +1,6 @@
 {
 	"name": "svelte-uikit-components",
-	"version": "0.5.6",
+	"version": "0.5.7",
 	"license": "MIT",
 	"scripts": {
 		"dev": "vite dev",
@@ -23,7 +23,8 @@
 		"!dist/**/*.spec.*"
 	],
 	"peerDependencies": {
-		"svelte": "^3.54.0"
+		"svelte": "^3.54.0",
+		"uikit": "^3.16.15"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^2.0.0",
@@ -39,7 +40,5 @@
 	"svelte": "./dist/index.js",
 	"types": "./dist/index.d.ts",
 	"type": "module",
-	"dependencies": {
-		"uikit": "^3.16.15"
-	}
+	"dependencies": {}
 }
