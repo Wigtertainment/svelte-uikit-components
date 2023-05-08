@@ -56,12 +56,12 @@
 	</Alert>
 	<h1>ButtonGroup</h1>
 	<ButtonGroup>
-		<Button text="Button 1" style="default" />
-		<Button text="Button 2" style="primary" />
-		<Button text="Button 3" style="danger" />
+		<Button label="Button 1" style="default" />
+		<Button label="Button 2" style="primary" />
+		<Button label="Button 3" style="danger" />
 	</ButtonGroup>
 	<h1>Button</h1>
-	<Button text="Click" />
+	<Button label="Click" />
 	<h1>Card</h1>
 	<Card>
 		<CardHeader>
@@ -69,7 +69,7 @@
 		</CardHeader>
 		<CardContent>Card Content</CardContent>
 		<CardFooter>
-			<Button text="Action" />
+			<Button label="Action" />
 		</CardFooter>
 	</Card>
 	<h1>Comment</h1>
