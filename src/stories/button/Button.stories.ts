@@ -1,5 +1,4 @@
 import type { Meta, StoryObj } from '@storybook/svelte';
-
 import Button from "$lib/components/button/button.svelte";
 
 // More on how to set up stories at: https://storybook.js.org/docs/svelte/writing-stories/introduction
@@ -41,7 +40,7 @@ export const Secondary: Story = {
 	},
 };
 
-export const Large: Story = {
+export const Large: Story = {	
 	args: {
 		size: 'large',
 		label: 'Button',

@@ -5,10 +5,10 @@
 
 	const dispatch = createEventDispatcher();
 	let id: string;
-	export let showClose = false;
-	export let animation = false;
-	export let duration = 150;
-	export let style = "primary"; // primary / success / warning / danger
+	export let showClose: boolean = false;
+	export let animation: boolean = true;
+	export let duration: number = 150;
+	export let style: "primary" | "success" | "warning" | "danger" = "primary";
 
 	function getId() {
 		if (!id) id = uuidv4();
@@ -16,19 +16,32 @@
 	}
 
 	onMount(async () => {
+		init();
+	});
+
+	function init() {
+		let uikitAlertEl = createElement();
+		addEventListener(uikitAlertEl);
+	}
+
+	function createElement() {
 		let selector = `[data-id='${getId()}']`;
 		let element = document.querySelectorAll(selector);
 		let uikitAlertEl = UIkit.alert(element, {
 			animation: animation,
 			duration: duration,
 		});
+		return uikitAlertEl;
+	}
+
+	function addEventListener(uikitAlertEl: any) {
 		uikitAlertEl.$el.addEventListener("beforehide", (event: unknown) => {
 			dispatch("beforehide", event);
 		});
 		uikitAlertEl.$el.addEventListener("hide", (event: unknown) => {
 			dispatch("hide", event);
 		});
-	});
+	}
 </script>
 
 <div
