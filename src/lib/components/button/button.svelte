@@ -1,7 +1,5 @@
 <script lang="ts">
-	import { createEventDispatcher } from "svelte";
-
-	export let text: string = "";
+	export let label: string = "";
 	export let style:
 		| "default"
 		| "primary"
@@ -11,12 +9,6 @@
 		| "link" = "default";
 	export let size: "small" | "large" = "small";
 	export let width: "default" | "full" = "default";
-
-	const dispatch = createEventDispatcher();
-
-	function onClick(event: unknown) {
-		dispatch("click", event);
-	}
 </script>
 
 <button
@@ -30,7 +22,10 @@
 	class:uk-button-small={size === "small"}
 	class:uk-button-large={size === "large"}
 	class:uk-width-1-1={width === "full"}
-	on:click={onClick}
 >
-	{text}
+	{#if label}
+		{label}
+	{:else}
+		<slot />
+	{/if}
 </button>
