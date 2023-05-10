@@ -17,5 +17,5 @@ Now you only need to import uikit.css inside your global css file
 	import { Button } from "svelte-uikit-components";
 </script>
 
-<Button text="Click Me" style="danger">
+<Button label="Click Me" style="danger">
 ```
