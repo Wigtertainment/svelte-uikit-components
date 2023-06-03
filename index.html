@@ -1,125 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
 
-<head>
-	<meta charset="utf-8" />
-	<link rel="icon" href="./favicon.png" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link rel='stylesheet' href='./global.css'>
-	<meta http-equiv="content-security-policy" content="">
-		<link rel="modulepreload" href="./_app/immutable/entry/start.60ec9a40.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/index.e4cce1ec.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.efb963a8.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/index.65d59ba0.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/paths.a4940e24.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/app.6cd2c5d8.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/0.bffb5fc2.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/nav.2f31e9f3.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/2.b1eb3d04.js"><!-- HEAD_svelte-olpw53_START --><!-- HTML_TAG_START --><style>pre code.hljs{display:block;overflow-x:auto;padding:1em}code.hljs{padding:3px 5px}/*!
-  Theme: GitHub
-  Description: Light theme as seen on github.com
-  Author: github.com
-  Maintainer: @Hirse
-  Updated: 2021-05-15
+    <title>@storybook/cli - Storybook</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  Outdated base version: https://github.com/primer/github-syntax-light
-  Current colors taken from GitHub's CSS
-*/.hljs{color:#24292e;background:#fff}.hljs-doctag,.hljs-keyword,.hljs-meta .hljs-keyword,.hljs-template-tag,.hljs-template-variable,.hljs-type,.hljs-variable.language_{color:#d73a49}.hljs-title,.hljs-title.class_,.hljs-title.class_.inherited__,.hljs-title.function_{color:#6f42c1}.hljs-attr,.hljs-attribute,.hljs-literal,.hljs-meta,.hljs-number,.hljs-operator,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-id,.hljs-variable{color:#005cc5}.hljs-meta .hljs-string,.hljs-regexp,.hljs-string{color:#032f62}.hljs-built_in,.hljs-symbol{color:#e36209}.hljs-code,.hljs-comment,.hljs-formula{color:#6a737d}.hljs-name,.hljs-quote,.hljs-selector-pseudo,.hljs-selector-tag{color:#22863a}.hljs-subst{color:#24292e}.hljs-section{color:#005cc5;font-weight:700}.hljs-bullet{color:#735c0f}.hljs-emphasis{color:#24292e;font-style:italic}.hljs-strong{color:#24292e;font-weight:700}.hljs-addition{color:#22863a;background-color:#f0fff4}.hljs-deletion{color:#b31d28;background-color:#ffeef0}</style><!-- HTML_TAG_END --><!-- HEAD_svelte-olpw53_END -->
-</head>
+    
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    
+    <link
+      rel="prefetch"
+      href="./sb-common-assets/nunito-sans-regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="prefetch"
+      href="./sb-common-assets/nunito-sans-bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="./sb-common-assets/fonts.css" />
 
-<body>
-	
+    <link href="./sb-manager/runtime.js" rel="modulepreload" />
 
+    
+    <link href="./sb-addons/links-0/manager-bundle.js" rel="modulepreload" />
+    
+    <link href="./sb-addons/essentials-controls-1/manager-bundle.js" rel="modulepreload" />
+    
+    <link href="./sb-addons/essentials-actions-2/manager-bundle.js" rel="modulepreload" />
+    
+    <link href="./sb-addons/essentials-backgrounds-3/manager-bundle.js" rel="modulepreload" />
+    
+    <link href="./sb-addons/essentials-viewport-4/manager-bundle.js" rel="modulepreload" />
+    
+    <link href="./sb-addons/essentials-toolbars-5/manager-bundle.js" rel="modulepreload" />
+    
+    <link href="./sb-addons/essentials-measure-6/manager-bundle.js" rel="modulepreload" />
+    
+    <link href="./sb-addons/essentials-outline-7/manager-bundle.js" rel="modulepreload" />
+    
+    <link href="./sb-addons/interactions-8/manager-bundle.js" rel="modulepreload" />
+       
 
+    <style>
+      #storybook-root[hidden] {
+        display: none !important;
+      }
+    </style>
 
+    
+  </head>
+  <body>
+    <div id="root"></div>
 
-<nav class="uk-navbar-container"><div class="uk-container"><div uk-navbar><div class="uk-navbar-center"><div class="uk-navbar-center-left"><a class="uk-navbar-toggle uk-hidden@m" uk-navbar-toggle-icon uk-toggle href="#offcanvas-slide"></a>
-					<ul class="uk-navbar-nav"><li><a href="https://www.npmjs.com/package/svelte-uikit-components" target="_blank">NPM</a></li></ul></div>
-				<a class="uk-navbar-item uk-logo" href="#">svelte-uikit</a>
-				<div class="uk-navbar-center-right"><ul class="uk-navbar-nav"><li><a href="https://github.com/Wigtertainment/svelte-uikit-components" target="_blank">Github</a></li></ul></div></div></div></div></nav>
-<div class="tm-sidebar-left uk-visible@m"><h3>Documentation</h3>
-	<ul class="uk-nav uk-nav-default"><li class="uk-nav-header">COMPONENTS
-			</li><li><a href="/svelte-uikit-components/accordion">Accordion
-					</a>
-			</li><li><a href="/svelte-uikit-components/article">Article
-					</a>
-			</li><li><a href="/svelte-uikit-components/alert">Alert
-					</a>
-			</li><li><a href="/svelte-uikit-components/button">Button
-					</a>
-			</li><li><a href="/svelte-uikit-components/button-group">Button Group
-					</a>
-			</li><li><a href="/svelte-uikit-components/card">Card
-					</a>
-			</li><li><a href="/svelte-uikit-components/comment">Comment
-					</a>
-			</li><li><a href="/svelte-uikit-components/countdown">Countdown
-					</a>
-			</li><li><a href="/svelte-uikit-components/nav">Nav
-					</a>
-			</li><li><a href="/svelte-uikit-components/tab">Tab
-					</a>
-			</li></ul></div>
-<div id="tm-main" class="tm-main uk-section uk-section-default"><div class="uk-container uk-container-small uk-position-relative"><h1>Welcome to your library project</h1>
-<p>Create your package using @sveltejs/package and preview/showcase your work
-	with SvelteKit
-</p>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation
-</p>
+    
+    <script>
+      
+        
+          window['FEATURES'] = {
+  "warnOnLegacyHierarchySeparator": true,
+  "buildStoriesJson": false,
+  "storyStoreV7": true,
+  "argTypeTargetsV7": true,
+  "legacyDecoratorFileOrder": false
+};
+        
+      
+        
+          window['REFS'] = {};
+        
+      
+        
+          window['LOGLEVEL'] = "info";
+        
+      
+        
+          window['DOCS_OPTIONS'] = {
+  "defaultName": "Docs",
+  "autodocs": true
+};
+        
+      
+        
+          window['CONFIG_TYPE'] = "PRODUCTION";
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </script>
+    
 
-<div style="padding: 20px;"></div></div></div>
-<div id="offcanvas-slide" uk-offcanvas="overlay: true"><div class="uk-offcanvas-bar"><h3>Documentation</h3>
-		<ul class="uk-nav uk-nav-default"><li class="uk-nav-header">COMPONENTS
-			</li><li><a href="/svelte-uikit-components/accordion">Accordion
-					</a>
-			</li><li><a href="/svelte-uikit-components/article">Article
-					</a>
-			</li><li><a href="/svelte-uikit-components/alert">Alert
-					</a>
-			</li><li><a href="/svelte-uikit-components/button">Button
-					</a>
-			</li><li><a href="/svelte-uikit-components/button-group">Button Group
-					</a>
-			</li><li><a href="/svelte-uikit-components/card">Card
-					</a>
-			</li><li><a href="/svelte-uikit-components/comment">Comment
-					</a>
-			</li><li><a href="/svelte-uikit-components/countdown">Countdown
-					</a>
-			</li><li><a href="/svelte-uikit-components/nav">Nav
-					</a>
-			</li><li><a href="/svelte-uikit-components/tab">Tab
-					</a>
-			</li></ul></div></div>
+    <script type="module">
+      import './sb-manager/runtime.js';
 
+      
+      import './sb-addons/links-0/manager-bundle.js';
+      
+      import './sb-addons/essentials-controls-1/manager-bundle.js';
+      
+      import './sb-addons/essentials-actions-2/manager-bundle.js';
+      
+      import './sb-addons/essentials-backgrounds-3/manager-bundle.js';
+      
+      import './sb-addons/essentials-viewport-4/manager-bundle.js';
+      
+      import './sb-addons/essentials-toolbars-5/manager-bundle.js';
+      
+      import './sb-addons/essentials-measure-6/manager-bundle.js';
+      
+      import './sb-addons/essentials-outline-7/manager-bundle.js';
+      
+      import './sb-addons/interactions-8/manager-bundle.js';
+      
+    </script>
 
-			
-			<script>
-				{
-					__sveltekit_1o5j3yy = {
-						assets: "/svelte-uikit-components",
-						base: new URL(".", location).pathname.slice(0, -1),
-						env: {}
-					};
-
-					const element = document.currentScript.parentElement;
-
-					const data = [null,null];
-
-					Promise.all([
-						import("./_app/immutable/entry/start.60ec9a40.js"),
-						import("./_app/immutable/entry/app.6cd2c5d8.js")
-					]).then(([kit, app]) => {
-						kit.start(app, element, {
-							node_ids: [0, 2],
-							data,
-							form: null,
-							error: null
-						});
-					});
-				}
-			</script>
-		
-</body>
-
+    <link href="./sb-preview/runtime.js" rel="prefetch" as="script" />
+  </body>
 </html>

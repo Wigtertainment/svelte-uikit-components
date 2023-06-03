@@ -1,6 +1,0 @@
-@import "../node_modules/uikit/dist/css/uikit.min.css";
-@import "./uikit-theme.css";
-
-.uk-offcanvas-bar, .uk-offcanvas-bar h3, .uk-offcanvas-bar .uk-nav-default .uk-nav-header, .uk-offcanvas-bar .uk-nav-default>li>a  {
-    color: #999 !important;
-}
