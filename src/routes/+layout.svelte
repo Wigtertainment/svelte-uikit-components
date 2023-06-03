@@ -1,20 +1,21 @@
 <script lang="ts">
-	import "./../global.css";
+	import { base } from "$app/paths";
 	import Nav from "$lib/components/nav/nav.svelte";
 	import type { INavItem } from "../lib/index.js";
 	import github from "svelte-highlight/styles/github";
 
 	let navItems: INavItem[] = [
-		{ ident: '', text: "COMPONENTS", isHeader: true },
-		{ ident: "1", text: "Accordion", href: "/accordion" },
-		{ ident: "2", text: "Article", href: "/article" },
-		{ ident: "3", text: "Alert", href: "/alert" },
-		{ ident: "5", text: "Button", href: "/button" },
-		{ ident: "4", text: "Button Group", href: "/button-group" },
-		{ ident: "5", text: "Card", href: "/card" },
-		{ ident: "6", text: "Comment", href: "/comment" },
-		{ ident: "7", text: "Countdown", href: "/countdown" },
-		{ ident: "8", text: "Nav", href: "/nav" },
+		{ ident: "", text: "COMPONENTS", isHeader: true },
+		{ ident: "1", text: "Accordion", href: `${base}/accordion` },
+		{ ident: "2", text: "Article", href: `${base}/article` },
+		{ ident: "3", text: "Alert", href: `${base}/alert` },
+		{ ident: "5", text: "Button", href: `${base}/button` },
+		{ ident: "4", text: "Button Group", href: `${base}/button-group` },
+		{ ident: "5", text: "Card", href: `${base}/card` },
+		{ ident: "6", text: "Comment", href: `${base}/comment` },
+		{ ident: "7", text: "Countdown", href: `${base}/countdown` },
+		{ ident: "8", text: "Nav", href: `${base}/nav` },
+		{ ident: "9", text: "Tab", href: `${base}/tab` },
 	];
 </script>
 
@@ -27,6 +28,12 @@
 		<div uk-navbar>
 			<div class="uk-navbar-center">
 				<div class="uk-navbar-center-left">
+					<a
+						class="uk-navbar-toggle uk-hidden@m"
+						uk-navbar-toggle-icon
+						uk-toggle
+						href="#offcanvas-slide"
+					/>
 					<ul class="uk-navbar-nav">
 						<li>
 							<a
@@ -58,5 +65,11 @@
 <div id="tm-main" class="tm-main uk-section uk-section-default">
 	<div class="uk-container uk-container-small uk-position-relative">
 		<slot />
+	</div>
+</div>
+<div id="offcanvas-slide" uk-offcanvas="overlay: true">
+	<div class="uk-offcanvas-bar">
+		<h3>Documentation</h3>
+		<Nav items={navItems} />
 	</div>
 </div>

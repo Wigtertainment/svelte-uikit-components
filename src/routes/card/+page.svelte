@@ -1,12 +1,18 @@
 <script lang="ts">
-	import Button from "$lib/components/button/button.svelte";
-	import Card from "$lib/components/card/card.svelte";
-	import CardHeader from "$lib/components/card/card-header.svelte";
-	import CardFooter from "$lib/components/card/card-footer.svelte";
-	import CardContent from "$lib/components/card/card-content.svelte";
-</script>
+	import Highlight from "svelte-highlight";
+	import typescript from "svelte-highlight/languages/typescript";
+	import {
+		Button,
+		Card,
+		CardHeader,
+		CardFooter,
+		CardContent,
+		Tabset,
+		Tab,
+		TabContent,
+	} from "$lib/index.js";
 
-<h1>Card</h1>
+	let code = `
 <Card>
 	<CardHeader>
 		<h1>Header</h1>
@@ -16,3 +22,29 @@
 		<Button label="Action" />
 	</CardFooter>
 </Card>
+    `;
+</script>
+
+<h1>Card</h1>
+<Tabset>
+	<svelte:fragment slot="tabs">
+		<Tab ident={"pre"} active={true}>Preview</Tab>
+		<Tab ident={"code"}>Code</Tab>
+	</svelte:fragment>
+	<svelte:fragment slot="content">
+		<TabContent tabIdent="pre">
+			<Card>
+				<CardHeader>
+					<h1>Header</h1>
+				</CardHeader>
+				<CardContent>Card Content</CardContent>
+				<CardFooter>
+					<Button label="Action" />
+				</CardFooter>
+			</Card>
+		</TabContent>
+		<TabContent tabIdent="code">
+			<Highlight language={typescript} {code} />
+		</TabContent>
+	</svelte:fragment>
+</Tabset>
