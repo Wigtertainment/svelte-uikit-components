@@ -16,6 +16,10 @@
 		{ ident: "8", text: "Nav", href: `/nav` },
 		{ ident: "9", text: "Tab", href: `/tab` },
 	];
+
+	let gettingStartedNavItems: INavItem[] = [
+		{ ident: "1", text: "Introduction", href: `/getting-started` },
+	];
 </script>
 
 <svelte:head>
@@ -24,7 +28,7 @@
 
 <nav class="uk-navbar-container">
 	<div class="uk-container">
-		<div uk-navbar>
+		<div uk-navbar class="uk-navbar">
 			<div class="uk-navbar-center">
 				<div class="uk-navbar-center-left">
 					<a
@@ -42,7 +46,7 @@
 						</li>
 					</ul>
 				</div>
-				<a class="uk-navbar-item uk-logo" href="#">svelte-uikit</a>
+				<a class="uk-navbar-item uk-logo" href="/#">svelte-uikit</a>
 				<div class="uk-navbar-center-right">
 					<ul class="uk-navbar-nav">
 						<li>
@@ -58,6 +62,8 @@
 	</div>
 </nav>
 <div class="tm-sidebar-left uk-visible@m">
+	<h3>Getting Started</h3>
+	<Nav items={gettingStartedNavItems} />
 	<h3>Documentation</h3>
 	<Nav items={navItems} />
 </div>
@@ -68,6 +74,8 @@
 </div>
 <div id="offcanvas-slide" uk-offcanvas="overlay: true">
 	<div class="uk-offcanvas-bar">
+		<h3>Getting Started</h3>
+		<Nav items={gettingStartedNavItems} />
 		<h3>Documentation</h3>
 		<Nav items={navItems} />
 	</div>

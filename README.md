@@ -1,5 +1,8 @@
 ## svelte-uikit-components
 
+### Demo and Documentation
+[Demo](https://svelte-uikit.wigtertainment.com)
+
 ### Installation
 `npm i svelte-uikit-components`
 

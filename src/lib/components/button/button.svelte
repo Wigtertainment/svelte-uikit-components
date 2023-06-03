@@ -22,6 +22,7 @@
 	class:uk-button-small={size === "small"}
 	class:uk-button-large={size === "large"}
 	class:uk-width-1-1={width === "full"}
+	on:click
 >
 	{#if label}
 		{label}

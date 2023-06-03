@@ -1,14 +1,15 @@
 <script lang="ts">
+	import { Button } from "$lib/index.js";
+	import { goto } from "$app/navigation";
+
+	function navigate() {
+		console.log('NAVIGATE');
+		goto("/getting-started");
+	}
 </script>
 
-<h1>Welcome to your library project</h1>
-<p>
-	Create your package using @sveltejs/package and preview/showcase your work
-	with SvelteKit
-</p>
-<p>
-	Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation
-</p>
+<h1>Welcome to svelte-uikit-components</h1>
+<p>Svelte Component Library for the UIkit framework</p>
+<Button label={"GETTING STARTED"} style={"primary"} on:click={navigate} />
 
-<div style="padding: 20px;">
-</div>
+<div style="padding: 20px;" />
