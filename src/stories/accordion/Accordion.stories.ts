@@ -25,13 +25,13 @@ type Story = StoryObj<typeof meta>;
 
 export default meta;
 
-export const Collapsible: Story = {
+export const AllCollapsible: Story = {
     args: {
         collapsible: true,
     },
 };
 
-export const Multiple: Story = {
+export const NotAllCollapsible: Story = {
     args: {
         collapsible: false,
     },

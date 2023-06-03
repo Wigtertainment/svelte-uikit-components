@@ -9,6 +9,8 @@
 	export let animation: boolean = true;
 	export let duration: number = 150;
 	export let style: "primary" | "success" | "warning" | "danger" = "primary";
+	let uikitAlertEl: any;
+	let mounted: boolean = false;
 
 	function getId() {
 		if (!id) id = uuidv4();
@@ -17,24 +19,24 @@
 
 	onMount(async () => {
 		init();
+		mounted = true;
 	});
 
 	function init() {
-		let uikitAlertEl = createElement();
-		addEventListener(uikitAlertEl);
+		createElement();
+		addEventListener();
 	}
 
 	function createElement() {
 		let selector = `[data-id='${getId()}']`;
 		let element = document.querySelectorAll(selector);
-		let uikitAlertEl = UIkit.alert(element, {
+		uikitAlertEl = UIkit.alert(element, {
 			animation: animation,
 			duration: duration,
 		});
-		return uikitAlertEl;
 	}
 
-	function addEventListener(uikitAlertEl: any) {
+	function addEventListener() {
 		uikitAlertEl.$el.addEventListener("beforehide", (event: unknown) => {
 			dispatch("beforehide", event);
 		});

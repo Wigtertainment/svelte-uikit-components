@@ -19,8 +19,10 @@ import CommentAvatar from "./components/comment/comment-avatar.svelte";
 import CommentHeader from "./components/comment/comment-header.svelte";
 import CommentMetaList from "./components/comment/comment-meta-list.svelte";
 import Countdown from "./components/countdown/countdown.svelte";
+import Nav from "./components/nav/nav.svelte";
+export * from "./components/nav/nav.interfaces.js";
 
 export {
     Accordion, AccordionItem, Alert, ArticleMeta, ArticleTitle, Article, Button, ButtonGroup, Card, CardMedia, CardFooter, CardHeader, CardContent,
-    Comment, CommentBody, CommentTitle, CommentAvatar, CommentHeader, CommentMetaList, Countdown
+    Comment, CommentBody, CommentTitle, CommentAvatar, CommentHeader, CommentMetaList, Countdown, Nav
 }

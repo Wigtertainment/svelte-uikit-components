@@ -14,7 +14,8 @@ declare global {
 			['uk-alert']?: boolean;
 			['uk-close']?: boolean;
 			['uk-grid']?: boolean;
-			['uk-countdown']?: string
+			['uk-countdown']?: string;
+			[key: string]: any
 		}
 	}
 }

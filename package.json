@@ -53,6 +53,6 @@
   "types": "./dist/index.d.ts",
   "type": "module",
   "dependencies": {
-    "@storybook/addon-svelte-csf": "^3.0.2"
+    "svelte-highlight": "^7.3.0"
   }
 }
