@@ -1,21 +1,20 @@
 <script lang="ts">
-	import { base } from "$app/paths";
 	import Nav from "$lib/components/nav/nav.svelte";
 	import type { INavItem } from "../lib/index.js";
 	import github from "svelte-highlight/styles/github";
 
 	let navItems: INavItem[] = [
 		{ ident: "", text: "COMPONENTS", isHeader: true },
-		{ ident: "1", text: "Accordion", href: `${base}/accordion` },
-		{ ident: "2", text: "Article", href: `${base}/article` },
-		{ ident: "3", text: "Alert", href: `${base}/alert` },
-		{ ident: "5", text: "Button", href: `${base}/button` },
-		{ ident: "4", text: "Button Group", href: `${base}/button-group` },
-		{ ident: "5", text: "Card", href: `${base}/card` },
-		{ ident: "6", text: "Comment", href: `${base}/comment` },
-		{ ident: "7", text: "Countdown", href: `${base}/countdown` },
-		{ ident: "8", text: "Nav", href: `${base}/nav` },
-		{ ident: "9", text: "Tab", href: `${base}/tab` },
+		{ ident: "1", text: "Accordion", href: `/accordion` },
+		{ ident: "2", text: "Article", href: `/article` },
+		{ ident: "3", text: "Alert", href: `/alert` },
+		{ ident: "5", text: "Button", href: `/button` },
+		{ ident: "4", text: "Button Group", href: `/button-group` },
+		{ ident: "5", text: "Card", href: `/card` },
+		{ ident: "6", text: "Comment", href: `/comment` },
+		{ ident: "7", text: "Countdown", href: `/countdown` },
+		{ ident: "8", text: "Nav", href: `/nav` },
+		{ ident: "9", text: "Tab", href: `/tab` },
 	];
 </script>
 
