@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta http-equiv="content-security-policy" content="">
 		<link href="./_app/immutable/assets/0.3d63ccdf.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/tab-content.c47a857b.css" rel="stylesheet">
 		<link rel="modulepreload" href="./_app/immutable/entry/start.5bd7d20f.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/index.e4cce1ec.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.85c1fa3e.js">
@@ -14,7 +15,8 @@
 		<link rel="modulepreload" href="./_app/immutable/entry/app.2c495dc4.js">
 		<link rel="modulepreload" href="./_app/immutable/nodes/0.136ad0b1.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/nav.2f31e9f3.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/2.b1eb3d04.js"><!-- HEAD_svelte-olpw53_START --><!-- HTML_TAG_START --><style>pre code.hljs{display:block;overflow-x:auto;padding:1em}code.hljs{padding:3px 5px}/*!
+		<link rel="modulepreload" href="./_app/immutable/nodes/10.2e57ca30.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/tab-content.fce9f9c6.js"><!-- HEAD_svelte-olpw53_START --><!-- HTML_TAG_START --><style>pre code.hljs{display:block;overflow-x:auto;padding:1em}code.hljs{padding:3px 5px}/*!
   Theme: GitHub
   Description: Light theme as seen on github.com
   Author: github.com
@@ -59,14 +61,13 @@
 			</li><li><a href="/tab">Tab
 					</a>
 			</li></ul></div>
-<div id="tm-main" class="tm-main uk-section uk-section-default"><div class="uk-container uk-container-small uk-position-relative"><h1>Welcome to your library project</h1>
-<p>Create your package using @sveltejs/package and preview/showcase your work
-	with SvelteKit
-</p>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation
-</p>
+<div id="tm-main" class="tm-main uk-section uk-section-default"><div class="uk-container uk-container-small uk-position-relative"><h1>Countdown</h1>
+<ul uk-tab><li class="uk-active"><a href="">Preview</a></li>
+		<li><a href="">Code</a></li></ul>
 
-<div style="padding: 20px;"></div></div></div>
+
+		
+	</div></div>
 <div id="offcanvas-slide" uk-offcanvas="overlay: true"><div class="uk-offcanvas-bar"><h3>Documentation</h3>
 		<ul class="uk-nav uk-nav-default"><li class="uk-nav-header">COMPONENTS
 			</li><li><a href="/accordion">Accordion
@@ -109,7 +110,7 @@
 						import("./_app/immutable/entry/app.2c495dc4.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
-							node_ids: [0, 2],
+							node_ids: [0, 10],
 							data,
 							form: null,
 							error: null
