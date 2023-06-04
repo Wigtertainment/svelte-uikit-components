@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { Article, ArticleMeta, ArticleTitle, Tabset, Tab, TabContent } from "$lib/index.js";
-	import Highlight from "svelte-highlight";
-	import typescript from "svelte-highlight/languages/typescript";
+	import {HighlightSvelte} from "svelte-highlight";
+	import ShowcaseOptEvents from "../shared/showcase-opt-events.svelte";
 
 	let code = `
 <Article>
@@ -43,7 +43,8 @@
 			</Article>
 		</TabContent>
 		<TabContent tabIdent="code">
-			<Highlight language={typescript} {code} />
+			<HighlightSvelte {code} />
 		</TabContent>
 	</svelte:fragment>
 </Tabset>
+<ShowcaseOptEvents></ShowcaseOptEvents>

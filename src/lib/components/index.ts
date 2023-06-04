@@ -8,3 +8,4 @@ export * from './comment/index.js';
 export * from './countdown/index.js';
 export * from './nav/index.js';
 export * from './tab/index.js';
+export * from './table/index.js';
