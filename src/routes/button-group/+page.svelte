@@ -1,7 +1,13 @@
 <script lang="ts">
-	import Highlight from "svelte-highlight";
-	import typescript from "svelte-highlight/languages/typescript";
-	import { Button, ButtonGroup, Tabset, Tab, TabContent } from "$lib/index.js";
+	import { HighlightSvelte } from "svelte-highlight";
+	import {
+		Button,
+		ButtonGroup,
+		Tabset,
+		Tab,
+		TabContent,
+	} from "$lib/index.js";
+	import ShowcaseOptEvents from "../shared/showcase-opt-events.svelte";
 
 	let code = `
 <ButtonGroup>
@@ -27,7 +33,8 @@
 			</ButtonGroup>
 		</TabContent>
 		<TabContent tabIdent="code">
-			<Highlight language={typescript} {code} />
+			<HighlightSvelte {code} />
 		</TabContent>
 	</svelte:fragment>
 </Tabset>
+<ShowcaseOptEvents />
