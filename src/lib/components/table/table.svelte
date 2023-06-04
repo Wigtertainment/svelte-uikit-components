@@ -18,20 +18,4 @@
 	class:uk-table-small={size === "small"}
 >
 	<slot />
-	<!-- <caption />
-	<thead>
-		<tr>
-			<th />
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td />
-		</tr>
-	</tbody>
-	<tfoot>
-		<tr>
-			<td />
-		</tr>
-	</tfoot> -->
 </table>
