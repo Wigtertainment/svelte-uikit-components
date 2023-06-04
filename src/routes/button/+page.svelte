@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { HighlightAuto } from "svelte-highlight";
+	import { HighlightSvelte } from "svelte-highlight";
 	import { Button, Tabset, Tab, TabContent } from "$lib/index.js";
 	import ShowcaseOptEvents from "../shared/showcase-opt-events.svelte";
 
@@ -19,7 +19,7 @@
 			<Button label="Click" />
 		</TabContent>
 		<TabContent tabIdent="code">
-			<HighlightAuto {code} />
+			<HighlightSvelte {code} />
 		</TabContent>
 	</svelte:fragment>
 </Tabset>

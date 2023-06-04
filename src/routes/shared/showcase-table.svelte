@@ -29,5 +29,12 @@
 				{/if}
 			</tr>
 		{/each}
+		{#if data?.length === 0}
+			<tr>
+				<td rowspan={events ? 2 : 4}>
+					No {events ? "Events" : "Component Options"}
+				</td>
+			</tr>
+		{/if}
 	</tbody>
 </Table>

@@ -1,7 +1,7 @@
 <script lang="ts">
-	import Highlight from "svelte-highlight";
-	import typescript from "svelte-highlight/languages/typescript";
+	import { HighlightSvelte } from "svelte-highlight";
 	import { Countdown, Tabset, Tab, TabContent } from "$lib/index.js";
+	import ShowcaseOptEvents from "../shared/showcase-opt-events.svelte";
 
 	let code = `
 <Countdown date={new Date(\`${new Date().getFullYear() + 1}-1-1\`)} />
@@ -19,7 +19,8 @@
 			<Countdown date={new Date(`${new Date().getFullYear() + 1}-1-1`)} />
 		</TabContent>
 		<TabContent tabIdent="code">
-			<Highlight language={typescript} {code} />
+			<HighlightSvelte {code} />
 		</TabContent>
 	</svelte:fragment>
 </Tabset>
+<ShowcaseOptEvents />
