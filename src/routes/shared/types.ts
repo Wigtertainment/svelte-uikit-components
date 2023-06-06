@@ -1,6 +1,7 @@
 export interface IShowcaseTableData {
     name: string;
-    description: string;
+    description?: string;
     type?: string;
     default?: string;
+    isGroupHeader?: boolean;
 }

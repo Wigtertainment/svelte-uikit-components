@@ -7,34 +7,42 @@
 </script>
 
 <h2>{title}</h2>
-<Table>
-	<thead>
-		<tr>
-			<th>Name</th>
-			<th>Description</th>
-			{#if !events}
-				<th>Type</th>
-				<th>Default</th>
-			{/if}
-		</tr>
-	</thead>
-	<tbody>
-		{#each data as row}
+<div class="uk-overflow-auto">
+	<Table>
+		<thead>
 			<tr>
-				<td><code>{row.name}</code></td>
-				<td>{row.description}</td>
+				<th>Name</th>
+				<th class="uk-table-expand">Description</th>
 				{#if !events}
-					<td><code>{row.type}</code></td>
-					<td><code>{row.default}</code></td>
+					<th>Type</th>
+					<th>Default</th>
 				{/if}
 			</tr>
-		{/each}
-		{#if data?.length === 0}
-			<tr>
-				<td rowspan={events ? 2 : 4}>
-					No {events ? "Events" : "Component Options"}
-				</td>
-			</tr>
-		{/if}
-	</tbody>
-</Table>
+		</thead>
+		<tbody>
+			{#each data as row}
+				<tr>
+					{#if row.isGroupHeader}
+						<td colspan={events ? 2 : 4}
+							><caption>{row.name}</caption></td
+						>
+					{:else}
+						<td><code>{row.name}</code></td>
+						<td>{row.description}</td>
+						{#if !events}
+							<td><code>{row.type}</code></td>
+							<td><code>{row.default}</code></td>
+						{/if}
+					{/if}
+				</tr>
+			{/each}
+			{#if data?.length === 0}
+				<tr>
+					<td colspan={events ? 2 : 4}>
+						No {events ? "Events" : "Component Options"}
+					</td>
+				</tr>
+			{/if}
+		</tbody>
+	</Table>
+</div>

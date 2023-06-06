@@ -1,5 +1,6 @@
 <script lang="ts">
 	export let label: string = "";
+	export let disabled: boolean = false;
 	export let style:
 		| "default"
 		| "primary"
@@ -7,7 +8,7 @@
 		| "danger"
 		| "text"
 		| "link" = "default";
-	export let size: "small" | "large" = "small";
+	export let size: "small" | "default" | "large" = "default";
 	export let width: "default" | "full" = "default";
 </script>
 
@@ -22,6 +23,7 @@
 	class:uk-button-small={size === "small"}
 	class:uk-button-large={size === "large"}
 	class:uk-width-1-1={width === "full"}
+	disabled={disabled}
 	on:click
 >
 	{#if label}

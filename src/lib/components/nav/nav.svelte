@@ -1,6 +1,7 @@
 <script lang="ts">
 	import type { INavItem } from "./nav.interfaces.js";
 	import { createEventDispatcher } from "svelte";
+	import NavItem from "./nav-item.svelte";
 	let dispatch = createEventDispatcher();
 
 	export let items: INavItem[] = [];
@@ -10,25 +11,8 @@
 	}
 </script>
 
-<ul class="uk-nav uk-nav-default">
+<ul class="uk-nav-default" uk-nav>
 	{#each items as item}
-		{#if item.isHeader}
-			<li class="uk-nav-header">
-				{item.text}
-			</li>
-		{:else}
-			<li class:uk-active={item.active}>
-				{#if item.href}
-					<a
-						href={item.href}
-						on:click={() => itemClicked(item.ident)}
-					>
-						{item.text}
-					</a>
-				{:else}
-					<a on:click={() => itemClicked(item.ident)}>{item.text}</a>
-				{/if}
-			</li>
-		{/if}
+		<NavItem {item} on:itemClicked={(event) => itemClicked(event.detail)} />
 	{/each}
 </ul>

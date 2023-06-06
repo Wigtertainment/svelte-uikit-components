@@ -1,4 +1,5 @@
 import Nav from "./nav.svelte";
-import type {INavItem} from "./nav.interfaces.js";
+import NavItem from "./nav-item.svelte";
+import type { INavItem } from "./nav.interfaces.js";
 
-export { Nav, INavItem };
+export { Nav, NavItem, INavItem };
