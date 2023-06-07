@@ -19,6 +19,7 @@
     `;
 
 	let options: IShowcaseTableData[] = [
+		{ name: "Accordion", isGroupHeader: true },
 		{
 			name: "collapsible",
 			description: "All accordion items can be collapsed",
@@ -32,6 +33,13 @@
 			type: "boolean",
 			default: "true",
 		},
+		{ name: "AccordionItem", isGroupHeader: true },
+		{
+			name: "header",
+			description: "",
+			type: "string",
+			default: "",
+		},
 	];
 
 	let events: IShowcaseTableData[] = [
@@ -41,8 +49,7 @@
 		},
 		{
 			name: "show",
-			description:
-				"-",
+			description: "-",
 		},
 		{
 			name: "shown",
@@ -71,7 +78,7 @@
 	</svelte:fragment>
 	<svelte:fragment slot="content">
 		<TabContent tabIdent="pre">
-			<Accordion collapsible={true}>
+			<Accordion>
 				<AccordionItem header="Item 1">
 					Accordion Item 1 Content
 				</AccordionItem>
