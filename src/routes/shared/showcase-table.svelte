@@ -6,7 +6,7 @@
 	export let events: boolean = false;
 </script>
 
-<h2>{title}</h2>
+<h3>{title}</h3>
 <div class="uk-overflow-auto">
 	<Table>
 		<thead>

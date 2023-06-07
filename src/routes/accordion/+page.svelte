@@ -78,7 +78,7 @@
 	</svelte:fragment>
 	<svelte:fragment slot="content">
 		<TabContent tabIdent="pre">
-			<Accordion collapsible={true}>
+			<Accordion>
 				<AccordionItem header="Item 1">
 					Accordion Item 1 Content
 				</AccordionItem>
