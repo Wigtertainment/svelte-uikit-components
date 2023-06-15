@@ -1,12 +1,16 @@
 {
   "name": "svelte-uikit-components",
-  "version": "0.6.2",
+  "version": "0.6.5",
   "license": "MIT",
   "author": {
     "name": "Wigtertainment Ltd",
     "email": "info@Wigtertainment.ltd",
     "url": "https://Wigtertainment.ltd"
   },
+  "repository": {
+    "url": "https://github.com/Wigtertainment/svelte-uikit-components"
+  },
+  "homepage": "https://svelte-uikit.wigtertainment.com",
   "scripts": {
     "dev": "vite dev",
     "build": "vite build && npm run package",

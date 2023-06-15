@@ -3,7 +3,6 @@
 	import { goto } from "$app/navigation";
 
 	function navigate() {
-		console.log('NAVIGATE');
 		goto("/getting-started");
 	}
 </script>

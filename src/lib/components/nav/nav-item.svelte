@@ -14,6 +14,7 @@
 	<li class="uk-nav-header">
 		{item.text}
 	</li>
+	<li class="uk-nav-divider" />
 {:else}
 	<li
 		class:uk-active={item.active}
@@ -28,10 +29,18 @@
 			</ul>
 		{:else if item.href}
 			<a href={item.href} on:click={() => itemClicked(item.ident)}>
+				{#if item.externel}
+					<span class="uk-margin-small-left" uk-icon="icon: link" />
+				{/if}
 				{item.text}
 			</a>
 		{:else}
-			<a on:click={() => itemClicked(item.ident)}>{item.text}</a>
+			<a on:click={() => itemClicked(item.ident)}>
+				{item.text}
+				{#if item.externel}
+					<span class="uk-margin-small-left" uk-icon="icon: link" />
+				{/if}
+			</a>
 		{/if}
 	</li>
 {/if}

@@ -7,7 +7,7 @@
 		{ ident: "", text: "Menu", isHeader: true },
 		{ ident: "1", text: "Item 1" },
 		{ ident: "2", text: "Item 2" },
-		{ ident: "3", text: "Item 3" },
+		{ ident: "3", text: "Item 3", externel: true },
 	];
 
 	function navigate(event: CustomEvent<string>) {
