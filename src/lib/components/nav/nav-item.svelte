@@ -6,7 +6,9 @@
 	export let item: INavItem;
 
 	function itemClicked(ident: string) {
-		dispatch("itemClicked", ident);
+		if (!item.href) {
+			dispatch("itemClicked", ident);
+		}
 	}
 </script>
 
@@ -31,14 +33,14 @@
 			<a href={item.href} on:click={() => itemClicked(item.ident)}>
 				{item.text}
 				{#if item.external}
-					<span class="uk-margin-small-left" uk-icon="icon: link" />
+					<span class="uk-margin-auto-left" uk-icon="icon: link" />
 				{/if}
 			</a>
 		{:else}
 			<a on:click={() => itemClicked(item.ident)}>
 				{item.text}
 				{#if item.external}
-					<span class="uk-margin-small-left" uk-icon="icon: link" />
+					<span class="uk-margin-auto-left" uk-icon="icon: link" />
 				{/if}
 			</a>
 		{/if}
