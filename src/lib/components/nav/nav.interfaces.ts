@@ -5,5 +5,5 @@ export interface INavItem {
     href?: string;
     active?: boolean;
     children?: INavItem[];
-    externel?: boolean;
+    external?: boolean;
 }

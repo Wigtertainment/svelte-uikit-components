@@ -29,15 +29,15 @@
 			</ul>
 		{:else if item.href}
 			<a href={item.href} on:click={() => itemClicked(item.ident)}>
-				{#if item.externel}
+				{item.text}
+				{#if item.external}
 					<span class="uk-margin-small-left" uk-icon="icon: link" />
 				{/if}
-				{item.text}
 			</a>
 		{:else}
 			<a on:click={() => itemClicked(item.ident)}>
 				{item.text}
-				{#if item.externel}
+				{#if item.external}
 					<span class="uk-margin-small-left" uk-icon="icon: link" />
 				{/if}
 			</a>
