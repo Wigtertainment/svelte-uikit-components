@@ -8,14 +8,14 @@
 		{ ident: "1", text: "Accordion", href: `/accordion` },
 		{ ident: "2", text: "Article", href: `/article` },
 		{ ident: "3", text: "Alert", href: `/alert` },
-		{ ident: "3", text: "Badge", href: `/badge` },
+		{ ident: "4", text: "Badge", href: `/badge` },
 		{ ident: "5", text: "Button", href: `/button` },
-		{ ident: "4", text: "Button Group", href: `/button-group` },
-		{ ident: "5", text: "Card", href: `/card` },
-		{ ident: "6", text: "Comment", href: `/comment` },
-		{ ident: "7", text: "Countdown", href: `/countdown` },
-		{ ident: "8", text: "Nav", href: `/nav` },
-		{ ident: "9", text: "Tab", href: `/tab` },
+		{ ident: "6", text: "Button Group", href: `/button-group` },
+		{ ident: "7", text: "Card", href: `/card` },
+		{ ident: "8", text: "Comment", href: `/comment` },
+		{ ident: "9", text: "Countdown", href: `/countdown` },
+		{ ident: "10", text: "Nav", href: `/nav` },
+		{ ident: "11", text: "Tab", href: `/tab` },
 	];
 
 	let gettingStartedNavItems: INavItem[] = [
