@@ -8,6 +8,7 @@
 		{ ident: "1", text: "Accordion", href: `/accordion` },
 		{ ident: "2", text: "Article", href: `/article` },
 		{ ident: "3", text: "Alert", href: `/alert` },
+		{ ident: "3", text: "Badge", href: `/badge` },
 		{ ident: "5", text: "Button", href: `/button` },
 		{ ident: "4", text: "Button Group", href: `/button-group` },
 		{ ident: "5", text: "Card", href: `/card` },
