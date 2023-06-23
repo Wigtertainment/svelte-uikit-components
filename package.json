@@ -1,6 +1,6 @@
 {
   "name": "svelte-uikit-components",
-  "version": "0.6.7",
+  "version": "0.7.0",
   "license": "MIT",
   "author": {
     "name": "Wigtertainment Ltd",
@@ -55,5 +55,15 @@
   "type": "module",
   "dependencies": {
     "svelte-highlight": "^7.3.0"
-  }
+  },
+  "keywords": [
+    "svelte",
+    "sveltejs",
+    "uikit",
+    "components",
+    "lib",
+    "library",
+    "typescript",
+    "sveltekit"
+  ]
 }
