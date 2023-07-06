@@ -14,8 +14,10 @@
 		{ ident: "7", text: "Card", href: `/card` },
 		{ ident: "8", text: "Comment", href: `/comment` },
 		{ ident: "9", text: "Countdown", href: `/countdown` },
-		{ ident: "10", text: "Nav", href: `/nav` },
-		{ ident: "11", text: "Tab", href: `/tab` },
+		{ ident: "10", text: "Description List", href: `/description-list` },
+		{ ident: "11", text: "Label", href: `/label` },
+		{ ident: "12", text: "Nav", href: `/nav` },
+		{ ident: "13", text: "Tab", href: `/tab` },
 	];
 
 	let gettingStartedNavItems: INavItem[] = [
