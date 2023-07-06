@@ -6,6 +6,8 @@ export * from './button/index.js';
 export * from './card/index.js';
 export * from './comment/index.js';
 export * from './countdown/index.js';
+export * from './description-list/index.js';
+export * from './label/index.js';
 export * from './nav/index.js';
 export * from './tab/index.js';
 export * from './table/index.js';
