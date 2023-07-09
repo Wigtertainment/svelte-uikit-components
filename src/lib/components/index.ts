@@ -11,3 +11,4 @@ export * from './label/index.js';
 export * from './nav/index.js';
 export * from './tab/index.js';
 export * from './table/index.js';
+export * from './text/index.js';

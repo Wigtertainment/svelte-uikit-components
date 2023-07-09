@@ -18,6 +18,7 @@
 		{ ident: "11", text: "Label", href: `/label` },
 		{ ident: "12", text: "Nav", href: `/nav` },
 		{ ident: "13", text: "Tab", href: `/tab` },
+		{ ident: "14", text: "Text", href: `/text` },
 	];
 
 	let gettingStartedNavItems: INavItem[] = [
