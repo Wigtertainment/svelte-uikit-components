@@ -1,3 +1,3 @@
-import Countdown from "./countdown.svelte";
+import Countdown from './countdown.svelte';
 
 export { Countdown };

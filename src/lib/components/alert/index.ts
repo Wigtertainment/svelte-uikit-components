@@ -1,3 +1,3 @@
-import Alert from "./alert.svelte";
+import Alert from './alert.svelte';
 
 export { Alert };
