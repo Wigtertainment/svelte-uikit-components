@@ -15,10 +15,11 @@
 		{ ident: "8", text: "Comment", href: `/comment` },
 		{ ident: "9", text: "Countdown", href: `/countdown` },
 		{ ident: "10", text: "Description List", href: `/description-list` },
-		{ ident: "11", text: "Label", href: `/label` },
-		{ ident: "12", text: "Nav", href: `/nav` },
-		{ ident: "13", text: "Tab", href: `/tab` },
-		{ ident: "14", text: "Text", href: `/text` },
+		{ ident: "11", text: "Heading", href: `/heading` },
+		{ ident: "12", text: "Label", href: `/label` },
+		{ ident: "13", text: "Nav", href: `/nav` },
+		{ ident: "14", text: "Tab", href: `/tab` },
+		{ ident: "15", text: "Text", href: `/text` },
 	];
 
 	let gettingStartedNavItems: INavItem[] = [
