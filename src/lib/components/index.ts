@@ -13,3 +13,4 @@ export * from './nav/index.js';
 export * from './tab/index.js';
 export * from './table/index.js';
 export * from './text/index.js';
+export * from './spinner/index.js';
