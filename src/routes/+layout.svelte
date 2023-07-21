@@ -18,8 +18,9 @@
 		{ ident: "11", text: "Heading", href: `/heading` },
 		{ ident: "12", text: "Label", href: `/label` },
 		{ ident: "13", text: "Nav", href: `/nav` },
-		{ ident: "14", text: "Tab", href: `/tab` },
-		{ ident: "15", text: "Text", href: `/text` },
+		{ ident: "14", text: "Spinner", href: `/spinner` },
+		{ ident: "15", text: "Tab", href: `/tab` },
+		{ ident: "16", text: "Text", href: `/text` },
 	];
 
 	let gettingStartedNavItems: INavItem[] = [
