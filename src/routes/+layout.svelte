@@ -33,7 +33,7 @@
 	{@html github}
 </svelte:head>
 
-<nav class="uk-navbar-container">
+<nav uk-sticky class="uk-navbar-container uk-sticky uk-active uk-sticky-below uk-sticky-fixed">
 	<div class="uk-container">
 		<div uk-navbar class="uk-navbar">
 			<div class="uk-navbar-center">
