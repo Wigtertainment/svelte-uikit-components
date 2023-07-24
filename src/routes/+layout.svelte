@@ -15,6 +15,7 @@
 		{ ident: "8", text: "Comment", href: `/comment` },
 		{ ident: "9", text: "Countdown", href: `/countdown` },
 		{ ident: "10", text: "Description List", href: `/description-list` },
+		{ ident: "10", text: "DropDown", href: `/dropdown` },
 		{ ident: "11", text: "Heading", href: `/heading` },
 		{ ident: "12", text: "Label", href: `/label` },
 		{ ident: "13", text: "Nav", href: `/nav` },
@@ -32,7 +33,7 @@
 	{@html github}
 </svelte:head>
 
-<nav class="uk-navbar-container">
+<nav uk-sticky class="uk-navbar-container uk-sticky uk-active uk-sticky-below uk-sticky-fixed">
 	<div class="uk-container">
 		<div uk-navbar class="uk-navbar">
 			<div class="uk-navbar-center">
