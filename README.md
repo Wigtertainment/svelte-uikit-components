@@ -1,5 +1,11 @@
 ## svelte-uikit-components
 
+<p align="center">
+  <a href="https://svelte-uikit.wigtertainment.com">
+    <img src="./static/svelte-uikit-no-bg.png" alt="Svelte UiKit Components Logo" width="200" height="185">
+  </a>
+</p>
+
 ### Demo and Documentation
 [Demo](https://svelte-uikit.wigtertainment.com)
 
