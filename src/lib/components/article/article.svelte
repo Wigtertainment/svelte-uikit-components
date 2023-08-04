@@ -1,7 +1,6 @@
 <script lang="ts">
-
 </script>
 
 <article class="uk-article">
-  <slot />
+	<slot />
 </article>

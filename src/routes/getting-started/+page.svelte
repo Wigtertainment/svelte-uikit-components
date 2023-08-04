@@ -1,7 +1,7 @@
 <script lang="ts">
-	import Highlight from "svelte-highlight";
-	import markdown from "svelte-highlight/languages/markdown";
-    import css from "svelte-highlight/languages/css";
+	import Highlight from 'svelte-highlight';
+	import markdown from 'svelte-highlight/languages/markdown';
+	import css from 'svelte-highlight/languages/css';
 
 	let code = `
 <script>

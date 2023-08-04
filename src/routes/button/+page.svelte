@@ -1,8 +1,8 @@
 <script lang="ts">
-	import { HighlightSvelte } from "svelte-highlight";
-	import { Button, Tabset, Tab, TabContent } from "$lib/index.js";
-	import ShowcaseOptEvents from "../shared/showcase-opt-events.svelte";
-	import type { IShowcaseTableData } from "../shared/types.js";
+	import { HighlightSvelte } from 'svelte-highlight';
+	import { Button, Tabset, Tab, TabContent, tooltip } from '$lib/index.js';
+	import ShowcaseOptEvents from '../shared/showcase-opt-events.svelte';
+	import type { IShowcaseTableData } from '../shared/types.js';
 
 	let code = `
 <script>
@@ -71,46 +71,46 @@
     `;
 
 	function buttonClicked() {
-		alert("Button clicked");
+		alert('Button clicked');
 	}
 
 	const options: IShowcaseTableData[] = [
 		{
-			name: "label",
-			description: "",
-			type: "string",
-			default: "",
+			name: 'label',
+			description: '',
+			type: 'string',
+			default: '',
 		},
 		{
-			name: "disabled",
-			description: "",
-			type: "boolean",
-			default: "false",
+			name: 'disabled',
+			description: '',
+			type: 'boolean',
+			default: 'false',
 		},
 		{
-			name: "style",
-			description: "",
+			name: 'style',
+			description: '',
 			type: "'default' | 'primary' | 'secondary' | 'danger' | 'text' | 'link'",
-			default: "default",
+			default: 'default',
 		},
 		{
-			name: "size",
-			description: "Make the button smaller or larger",
+			name: 'size',
+			description: 'Make the button smaller or larger',
 			type: "'small' | 'default' | 'large'",
-			default: "default",
+			default: 'default',
 		},
 		{
-			name: "width",
-			description: "The button will take up full width",
+			name: 'width',
+			description: 'The button will take up full width',
 			type: "'default' | 'full'",
-			default: "default",
+			default: 'default',
 		},
 	];
 
 	const events: IShowcaseTableData[] = [
 		{
-			name: "on:click",
-			description: "",
+			name: 'on:click',
+			description: '',
 		},
 	];
 </script>
@@ -119,12 +119,21 @@
 <h3>Default</h3>
 <Tabset>
 	<svelte:fragment slot="tabs">
-		<Tab ident={"pre"} active={true}>Preview</Tab>
-		<Tab ident={"code"}>Code</Tab>
+		<Tab ident={'pre'} active={true}>Preview</Tab>
+		<Tab ident={'code'}>Code</Tab>
 	</svelte:fragment>
 	<svelte:fragment slot="content">
 		<TabContent tabIdent="pre">
-			<Button label="Click" on:click={buttonClicked} />
+			<span
+				use:tooltip={{ title: 'TEST' }}
+				on:beforeshow={(event) => console.log('beforeshow', event)}
+				on:show={(event) => console.log('show', event)}
+				on:shown={(event) => console.log('shown', event)}
+				on:beforehide={(event) => console.log('beforehide', event)}
+				on:hide={(event) => console.log('hide', event)}
+				on:hidden={(event) => console.log('hidden', event)}>
+				<Button label="Click" on:click={buttonClicked} />
+			</span>
 		</TabContent>
 		<TabContent tabIdent="code">
 			<HighlightSvelte {code} />
@@ -135,8 +144,8 @@
 <h3>Styled</h3>
 <Tabset>
 	<svelte:fragment slot="tabs">
-		<Tab ident={"pre"} active={true}>Preview</Tab>
-		<Tab ident={"code"}>Code</Tab>
+		<Tab ident={'pre'} active={true}>Preview</Tab>
+		<Tab ident={'code'}>Code</Tab>
 	</svelte:fragment>
 	<svelte:fragment slot="content">
 		<TabContent tabIdent="pre">
@@ -155,8 +164,8 @@
 <h3>Disabled</h3>
 <Tabset>
 	<svelte:fragment slot="tabs">
-		<Tab ident={"pre"} active={true}>Preview</Tab>
-		<Tab ident={"code"}>Code</Tab>
+		<Tab ident={'pre'} active={true}>Preview</Tab>
+		<Tab ident={'code'}>Code</Tab>
 	</svelte:fragment>
 	<svelte:fragment slot="content">
 		<TabContent tabIdent="pre">
@@ -171,8 +180,8 @@
 <h3>Size</h3>
 <Tabset>
 	<svelte:fragment slot="tabs">
-		<Tab ident={"pre"} active={true}>Preview</Tab>
-		<Tab ident={"code"}>Code</Tab>
+		<Tab ident={'pre'} active={true}>Preview</Tab>
+		<Tab ident={'code'}>Code</Tab>
 	</svelte:fragment>
 	<svelte:fragment slot="content">
 		<TabContent tabIdent="pre">
@@ -189,8 +198,8 @@
 <h3>Width</h3>
 <Tabset>
 	<svelte:fragment slot="tabs">
-		<Tab ident={"pre"} active={true}>Preview</Tab>
-		<Tab ident={"code"}>Code</Tab>
+		<Tab ident={'pre'} active={true}>Preview</Tab>
+		<Tab ident={'code'}>Code</Tab>
 	</svelte:fragment>
 	<svelte:fragment slot="content">
 		<TabContent tabIdent="pre">

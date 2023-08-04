@@ -1,7 +1,7 @@
 <script>
-  export let cssClass = "";
+	export let cssClass = '';
 </script>
 
 <h4 class="uk-comment-title {cssClass ? cssClass : ''}">
-  <slot />
+	<slot />
 </h4>

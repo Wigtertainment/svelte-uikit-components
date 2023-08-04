@@ -1,18 +1,8 @@
 <script lang="ts">
-	import { HighlightSvelte } from "svelte-highlight";
-	import {
-		Button,
-		Card,
-		CardHeader,
-		CardFooter,
-		CardContent,
-		Tabset,
-		Tab,
-		TabContent,
-		CardMedia,
-	} from "$lib/index.js";
-	import ShowcaseOptEvents from "../shared/showcase-opt-events.svelte";
-	import type { IShowcaseTableData } from "../shared/types.js";
+	import { HighlightSvelte } from 'svelte-highlight';
+	import { Button, Card, CardHeader, CardFooter, CardContent, Tabset, Tab, TabContent, CardMedia } from '$lib/index.js';
+	import ShowcaseOptEvents from '../shared/showcase-opt-events.svelte';
+	import type { IShowcaseTableData } from '../shared/types.js';
 
 	let code = `
 <Card>
@@ -45,25 +35,25 @@
 	`;
 
 	const options: IShowcaseTableData[] = [
-		{ name: "Card", isGroupHeader: true },
-		{ name: "hover", description: "", default: "true", type: "boolean" },
+		{ name: 'Card', isGroupHeader: true },
+		{ name: 'hover', description: '', default: 'true', type: 'boolean' },
 		{
-			name: "size",
-			description: "",
-			default: "default",
+			name: 'size',
+			description: '',
+			default: 'default',
 			type: "'small' | 'default' | 'large'",
 		},
 		{
-			name: "style",
-			description: "",
-			default: "default",
+			name: 'style',
+			description: '',
+			default: 'default',
 			type: "'default' | 'primary' | 'secondary'",
 		},
-		{ name: "CardMedia", isGroupHeader: true },
+		{ name: 'CardMedia', isGroupHeader: true },
 		{
-			name: "position",
-			description: "",
-			default: "top",
+			name: 'position',
+			description: '',
+			default: 'top',
 			type: "'top' | 'bottom' | 'left' | 'right'",
 		},
 	];
@@ -72,8 +62,8 @@
 <h1>Card</h1>
 <Tabset>
 	<svelte:fragment slot="tabs">
-		<Tab ident={"pre"} active={true}>Preview</Tab>
-		<Tab ident={"code"}>Code</Tab>
+		<Tab ident={'pre'} active={true}>Preview</Tab>
+		<Tab ident={'code'}>Code</Tab>
 	</svelte:fragment>
 	<svelte:fragment slot="content">
 		<TabContent tabIdent="pre">
@@ -95,17 +85,14 @@
 <h1>Card with Media</h1>
 <Tabset>
 	<svelte:fragment slot="tabs">
-		<Tab ident={"pre"} active={true}>Preview</Tab>
-		<Tab ident={"code"}>Code</Tab>
+		<Tab ident={'pre'} active={true}>Preview</Tab>
+		<Tab ident={'code'}>Code</Tab>
 	</svelte:fragment>
 	<svelte:fragment slot="content">
 		<TabContent tabIdent="pre">
 			<Card>
 				<CardMedia>
-					<img
-						alt="Card Media Cat"
-						src="https://nypost.com/wp-content/uploads/sites/2/2022/07/Cat-feature.jpg"
-					/>
+					<img alt="Card Media Cat" src="https://nypost.com/wp-content/uploads/sites/2/2022/07/Cat-feature.jpg" />
 				</CardMedia>
 				<CardHeader>
 					<h1>Header</h1>

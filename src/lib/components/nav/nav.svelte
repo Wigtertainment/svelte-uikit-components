@@ -1,13 +1,13 @@
 <script lang="ts">
-	import type { INavItem } from "./nav.interfaces.js";
-	import { createEventDispatcher } from "svelte";
-	import NavItem from "./nav-item.svelte";
+	import type { INavItem } from './nav.interfaces.js';
+	import { createEventDispatcher } from 'svelte';
+	import NavItem from './nav-item.svelte';
 	let dispatch = createEventDispatcher();
 
 	export let items: INavItem[] = [];
 
 	function itemClicked(ident: string) {
-		dispatch("itemClicked", ident);
+		dispatch('itemClicked', ident);
 	}
 </script>
 

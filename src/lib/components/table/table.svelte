@@ -4,7 +4,7 @@
 	export let hover: boolean = false;
 	export let justify: boolean = false;
 	export let responsive: boolean = false;
-	export let size: "default" | "small" | "large" = "default";
+	export let size: 'default' | 'small' | 'large' = 'default';
 </script>
 
 <table
@@ -14,8 +14,7 @@
 	class:uk-table-divider={divider}
 	class:uk-table-striped={striped}
 	class:uk-table-hover={hover}
-	class:uk-table-large={size === "large"}
-	class:uk-table-small={size === "small"}
->
+	class:uk-table-large={size === 'large'}
+	class:uk-table-small={size === 'small'}>
 	<slot />
 </table>
