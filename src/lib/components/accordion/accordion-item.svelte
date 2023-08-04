@@ -1,5 +1,5 @@
 <script lang="ts">
-	export let header: string = "";
+	export let header: string = '';
 </script>
 
 <li>

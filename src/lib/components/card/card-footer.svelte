@@ -1,7 +1,6 @@
 <script>
-
 </script>
 
 <div class="uk-card-footer">
-  <slot />
+	<slot />
 </div>

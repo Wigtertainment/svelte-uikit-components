@@ -1,13 +1,13 @@
 <script lang="ts">
-	import type { INavItem } from "./nav.interfaces.js";
-	import { createEventDispatcher } from "svelte";
+	import type { INavItem } from './nav.interfaces.js';
+	import { createEventDispatcher } from 'svelte';
 	let dispatch = createEventDispatcher();
 
 	export let item: INavItem;
 
 	function itemClicked(ident: string) {
 		if (!item.href) {
-			dispatch("itemClicked", ident);
+			dispatch('itemClicked', ident);
 		}
 	}
 </script>
@@ -18,10 +18,7 @@
 	</li>
 	<li class="uk-nav-divider" />
 {:else}
-	<li
-		class:uk-active={item.active}
-		class:uk-parent={item.children?.length && item.children?.length > 0}
-	>
+	<li class:uk-active={item.active} class:uk-parent={item.children?.length && item.children?.length > 0}>
 		{#if item.children && item.children.length > 0}
 			<a href="#">{item.text} <span uk-nav-parent-icon /></a>
 			<ul class="uk-nav-sub">

@@ -1,13 +1,7 @@
 <script lang="ts">
-	import { HighlightSvelte } from "svelte-highlight";
-	import {
-		Button,
-		ButtonGroup,
-		Tabset,
-		Tab,
-		TabContent,
-	} from "$lib/index.js";
-	import ShowcaseOptEvents from "../shared/showcase-opt-events.svelte";
+	import { HighlightSvelte } from 'svelte-highlight';
+	import { Button, ButtonGroup, Tabset, Tab, TabContent } from '$lib/index.js';
+	import ShowcaseOptEvents from '../shared/showcase-opt-events.svelte';
 
 	let code = `
 <ButtonGroup>
@@ -21,8 +15,8 @@
 <h1>ButtonGroup</h1>
 <Tabset>
 	<svelte:fragment slot="tabs">
-		<Tab ident={"pre"} active={true}>Preview</Tab>
-		<Tab ident={"code"}>Code</Tab>
+		<Tab ident={'pre'} active={true}>Preview</Tab>
+		<Tab ident={'code'}>Code</Tab>
 	</svelte:fragment>
 	<svelte:fragment slot="content">
 		<TabContent tabIdent="pre">

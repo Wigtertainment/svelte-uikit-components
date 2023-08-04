@@ -1,8 +1,8 @@
 <script lang="ts">
-	import { Label, Tabset, Tab, TabContent } from "$lib/index.js";
-	import { HighlightSvelte } from "svelte-highlight";
-	import type { IShowcaseTableData } from "../shared/types.js";
-	import ShowcaseOptEvents from "../shared/showcase-opt-events.svelte";
+	import { Label, Tabset, Tab, TabContent } from '$lib/index.js';
+	import { HighlightSvelte } from 'svelte-highlight';
+	import type { IShowcaseTableData } from '../shared/types.js';
+	import ShowcaseOptEvents from '../shared/showcase-opt-events.svelte';
 
 	let code = `
 <Label>Default</Label>
@@ -13,10 +13,10 @@
 
 	let options: IShowcaseTableData[] = [
 		{
-			name: "type",
-			description: "-",
+			name: 'type',
+			description: '-',
 			type: `'default' | 'success' | 'warning' | 'danger'`,
-			default: "default",
+			default: 'default',
 		},
 	];
 
@@ -27,8 +27,8 @@
 <h3>Default</h3>
 <Tabset>
 	<svelte:fragment slot="tabs">
-		<Tab ident={"pre"} active={true}>Preview</Tab>
-		<Tab ident={"code"}>Code</Tab>
+		<Tab ident={'pre'} active={true}>Preview</Tab>
+		<Tab ident={'code'}>Code</Tab>
 	</svelte:fragment>
 	<svelte:fragment slot="content">
 		<TabContent tabIdent="pre">

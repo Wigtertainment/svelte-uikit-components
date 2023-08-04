@@ -1,8 +1,8 @@
 <script lang="ts">
-	import { Badge, Tabset, Tab, TabContent } from "$lib/index.js";
-	import { HighlightSvelte } from "svelte-highlight";
-	import type { IShowcaseTableData } from "../shared/types.js";
-	import ShowcaseOptEvents from "../shared/showcase-opt-events.svelte";
+	import { Badge, Tabset, Tab, TabContent } from '$lib/index.js';
+	import { HighlightSvelte } from 'svelte-highlight';
+	import type { IShowcaseTableData } from '../shared/types.js';
+	import ShowcaseOptEvents from '../shared/showcase-opt-events.svelte';
 
 	let code = `<Badge>1</Badge>`;
 
@@ -14,8 +14,8 @@
 <h1>Badge</h1>
 <Tabset>
 	<svelte:fragment slot="tabs">
-		<Tab ident={"pre"} active={true}>Preview</Tab>
-		<Tab ident={"code"}>Code</Tab>
+		<Tab ident={'pre'} active={true}>Preview</Tab>
+		<Tab ident={'code'}>Code</Tab>
 	</svelte:fragment>
 	<svelte:fragment slot="content">
 		<TabContent tabIdent="pre">

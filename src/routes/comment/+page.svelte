@@ -1,24 +1,12 @@
 <script lang="ts">
-	import { HighlightSvelte } from "svelte-highlight";
-	import {
-		Comment,
-		CommentHeader,
-		CommentAvatar,
-		CommentTitle,
-		CommentMetaList,
-		CommentBody,
-		Tabset,
-		Tab,
-		TabContent,
-	} from "$lib/index.js";
-	import ShowcaseOptEvents from "../shared/showcase-opt-events.svelte";
+	import { HighlightSvelte } from 'svelte-highlight';
+	import { Comment, CommentHeader, CommentAvatar, CommentTitle, CommentMetaList, CommentBody, Tabset, Tab, TabContent } from '$lib/index.js';
+	import ShowcaseOptEvents from '../shared/showcase-opt-events.svelte';
 
 	let code = `
 <Comment primary={false}>
 	<CommentHeader>
-		<CommentAvatar
-			src={"http://qa-dental.co.uk/wp-content/uploads/2017/02/avatar-man.png"}
-		/>
+		<CommentAvatar src={"http://qa-dental.co.uk/wp-content/uploads/2017/02/avatar-man.png"}/>
 		<CommentTitle>Max Power</CommentTitle>
 		<CommentMetaList>
 			<li>
@@ -49,16 +37,14 @@
 <h1>Comment</h1>
 <Tabset>
 	<svelte:fragment slot="tabs">
-		<Tab ident={"pre"} active={true}>Preview</Tab>
-		<Tab ident={"code"}>Code</Tab>
+		<Tab ident={'pre'} active={true}>Preview</Tab>
+		<Tab ident={'code'}>Code</Tab>
 	</svelte:fragment>
 	<svelte:fragment slot="content">
 		<TabContent tabIdent="pre">
 			<Comment primary={false}>
 				<CommentHeader>
-					<CommentAvatar
-						src={"http://qa-dental.co.uk/wp-content/uploads/2017/02/avatar-man.png"}
-					/>
+					<CommentAvatar src={'http://qa-dental.co.uk/wp-content/uploads/2017/02/avatar-man.png'} />
 					<CommentTitle>Max Power</CommentTitle>
 					<CommentMetaList>
 						<li>
@@ -71,17 +57,11 @@
 				</CommentHeader>
 				<CommentBody>
 					<p>
-						Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-						sed diam nonumy eirmod tempor invidunt ut labore et
-						dolore magna aliquyam erat, sed diam voluptua. At vero
-						eos et accusam et justo duo dolores et ea rebum. Stet
-						clita kasd gubergren, no sea takimata sanctus est Lorem
-						ipsum dolor sit amet. Lorem ipsum dolor sit amet,
-						consetetur sadipscing elitr, sed diam nonumy eirmod
-						tempor invidunt ut labore et dolore magna aliquyam erat,
-						sed diam voluptua. At vero eos et accusam et justo duo
-						dolores et ea rebum. Stet clita kasd gubergren, no sea
-						takimata sanctus est Lorem ipsum dolor sit amet.
+						Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+						aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+						takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+						eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+						et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 					</p>
 				</CommentBody>
 			</Comment>
