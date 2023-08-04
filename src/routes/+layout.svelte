@@ -4,6 +4,8 @@
     import github from 'svelte-highlight/styles/github';
 
     let navItems: INavItem[] = [
+        { ident: '', text: 'ACTIONS', isHeader: true },
+        { ident: '30', text: 'Tooltip', href: `/tooltip-action` },
         { ident: '', text: 'COMPONENTS', isHeader: true },
         { ident: '1', text: 'Accordion', href: `/accordion` },
         { ident: '2', text: 'Article', href: `/article` },
