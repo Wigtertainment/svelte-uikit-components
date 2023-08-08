@@ -3,6 +3,7 @@ export * from './alert/index.js';
 export * from './article/index.js';
 export * from './badge/index.js';
 export * from './button/index.js';
+export * from './breadcrumb/index.js';
 export * from './card/index.js';
 export * from './comment/index.js';
 export * from './countdown/index.js';
