@@ -16,3 +16,4 @@ export * from './tab/index.js';
 export * from './table/index.js';
 export * from './text/index.js';
 export * from './spinner/index.js';
+export * from './totop/index.js';
