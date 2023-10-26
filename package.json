@@ -39,7 +39,7 @@
   "devDependencies": {
     "@sveltejs/adapter-auto": "^2.1.0",
     "@sveltejs/adapter-netlify": "^2.0.8",
-    "@sveltejs/kit": "^1.25.1",
+    "@sveltejs/kit": "^1.27.1",
     "@sveltejs/package": "^2.2.2",
     "prettier": "^3.0.3",
     "publint": "^0.2.3",
