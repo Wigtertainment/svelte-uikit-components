@@ -36,7 +36,7 @@
     "svelte": "^4.2.3",
     "uikit": "^3.17.8"
   },
-  "EK/JFE-16587-add-version-dialog-to-download-page": {
+  "devDependencies": {
     "@sveltejs/adapter-auto": "^2.1.1",
     "@sveltejs/adapter-netlify": "^2.0.8",
     "@sveltejs/kit": "^1.27.6",
