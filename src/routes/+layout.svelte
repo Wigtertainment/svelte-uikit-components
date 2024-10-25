@@ -22,10 +22,11 @@
 		{ ident: '13', text: 'Heading', href: `/heading` },
 		{ ident: '14', text: 'Label', href: `/label` },
 		{ ident: '15', text: 'Nav', href: `/nav` },
-		{ ident: '16', text: 'Spinner', href: `/spinner` },
-		{ ident: '17', text: 'Tab', href: `/tab` },
-		{ ident: '18', text: 'Text', href: `/text` },
-		{ ident: '19', text: 'Totop', href: `/totop` },
+		{ ident: '16', text: 'Section', href: `/section` },
+		{ ident: '17', text: 'Spinner', href: `/spinner` },
+		{ ident: '18', text: 'Tab', href: `/tab` },
+		{ ident: '19', text: 'Text', href: `/text` },
+		{ ident: '20', text: 'Totop', href: `/totop` },
 	];
 
 	let gettingStartedNavItems: INavItem[] = [{ ident: '1', text: 'Introduction', href: `/getting-started` }];

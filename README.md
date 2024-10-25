@@ -9,23 +9,28 @@
 </p>
 
 ### Demo and Documentation
+
 [Demo](https://svelte-uikit.wigtertainment.com)
 
 ### Installation
+
 `npm i svelte-uikit-components`
 
 ### Setup
+
 Now you only need to import uikit.css inside your global css file
 
 `@import "../../node_modules/uikit/dist/css/uikit.min.css";`
 
 ### Support
-| Version | Svelte Version | UiKit Version |
-|---------|----------------|---------------|
-| 0.17.1 | 4.2.14 | 3.19.4 |
-| 0.16.0 | 4.2.3 | 3.17.8 |
-| 0.8.0 - 0.15.0 | 4.0.1 | 3.16.15 |
-| 0.7.0 | 3.54.0 | 3.16.15 |
+
+| Version        | Svelte Version | UiKit Version |
+| -------------- | -------------- | ------------- |
+| 0.18.0         | 4.2.14         | 3.21.13       |
+| 0.17.1         | 4.2.14         | 3.19.4        |
+| 0.16.0         | 4.2.3          | 3.17.8        |
+| 0.8.0 - 0.15.0 | 4.0.1          | 3.16.15       |
+| 0.7.0          | 3.54.0         | 3.16.15       |
 
 ### Example Usages
 

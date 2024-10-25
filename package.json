@@ -1,69 +1,69 @@
 {
-  "name": "svelte-uikit-components",
-  "version": "0.17.1",
-  "license": "MIT",
-  "author": {
-    "name": "Wigtertainment Ltd",
-    "email": "info@Wigtertainment.ltd",
-    "url": "https://Wigtertainment.ltd"
-  },
-  "repository": {
-    "url": "https://github.com/Wigtertainment/svelte-uikit-components"
-  },
-  "homepage": "https://svelte-uikit.wigtertainment.com",
-  "scripts": {
-    "dev": "vite dev",
-    "build": "vite build && npm run package",
-    "preview": "vite preview",
-    "package": "svelte-kit sync && svelte-package && publint",
-    "prepublishOnly": "npm run package",
-    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-    "pretty": "prettier --write \"./**/*.{js,ts}\""
-  },
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "svelte": "./dist/index.js"
-    }
-  },
-  "files": [
-    "dist",
-    "!dist/**/*.test.*",
-    "!dist/**/*.spec.*"
-  ],
-  "peerDependencies": {
-    "svelte": "^4.2.14",
-    "uikit": "^3.19.4"
-  },
-  "devDependencies": {
-    "@sveltejs/adapter-auto": "^3.2.0",
-    "@sveltejs/adapter-netlify": "^4.1.0",
-    "@sveltejs/kit": "^2.5.5",
-    "@sveltejs/package": "^2.3.1",
-    "prettier": "^3.1.0",
-    "publint": "^0.2.5",
-    "svelte": "^4.2.14",
-    "svelte-check": "^3.6.9",
-    "tslib": "^2.6.2",
-    "typescript": "^5.2.2",
-    "vite": "^5.2.8"
-  },
-  "svelte": "./dist/index.js",
-  "types": "./dist/index.d.ts",
-  "type": "module",
-  "dependencies": {
-    "prettier-plugin-svelte": "^3.2.3",
-    "svelte-highlight": "^7.6.0"
-  },
-  "keywords": [
-    "svelte",
-    "sveltejs",
-    "uikit",
-    "components",
-    "lib",
-    "library",
-    "typescript",
-    "sveltekit"
-  ]
+	"name": "svelte-uikit-components",
+	"version": "0.18.0",
+	"license": "MIT",
+	"author": {
+		"name": "Wigtertainment Ltd",
+		"email": "info@Wigtertainment.ltd",
+		"url": "https://Wigtertainment.ltd"
+	},
+	"repository": {
+		"url": "https://github.com/Wigtertainment/svelte-uikit-components"
+	},
+	"homepage": "https://svelte-uikit.wigtertainment.com",
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build && npm run package",
+		"preview": "vite preview",
+		"package": "svelte-kit sync && svelte-package && publint",
+		"prepublishOnly": "npm run package",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"pretty": "prettier --write \"./**/*.{js,ts}\""
+	},
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"svelte": "./dist/index.js"
+		}
+	},
+	"files": [
+		"dist",
+		"!dist/**/*.test.*",
+		"!dist/**/*.spec.*"
+	],
+	"peerDependencies": {
+		"svelte": "^4.2.14",
+		"uikit": "^3.21.13"
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-auto": "^3.2.0",
+		"@sveltejs/adapter-netlify": "^4.1.0",
+		"@sveltejs/kit": "^2.5.5",
+		"@sveltejs/package": "^2.3.1",
+		"prettier": "^3.1.0",
+		"publint": "^0.2.5",
+		"svelte": "^4.2.14",
+		"svelte-check": "^3.6.9",
+		"tslib": "^2.6.2",
+		"typescript": "^5.2.2",
+		"vite": "^5.2.8"
+	},
+	"svelte": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"type": "module",
+	"dependencies": {
+		"prettier-plugin-svelte": "^3.2.3",
+		"svelte-highlight": "^7.6.0"
+	},
+	"keywords": [
+		"svelte",
+		"sveltejs",
+		"uikit",
+		"components",
+		"lib",
+		"library",
+		"typescript",
+		"sveltekit"
+	]
 }
