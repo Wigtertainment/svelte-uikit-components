@@ -26,6 +26,7 @@ Now you only need to import uikit.css inside your global css file
 
 | Version        | Svelte Version | UiKit Version |
 | -------------- | -------------- | ------------- |
+| 0.19.0         | 4.2.14         | 3.23.0        |
 | 0.18.0         | 4.2.14         | 3.21.13       |
 | 0.17.1         | 4.2.14         | 3.19.4        |
 | 0.16.0         | 4.2.3          | 3.17.8        |
