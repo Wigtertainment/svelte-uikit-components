@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { Table } from "$lib/index.js";
-	import type { IShowcaseTableData } from "./types.js";
+	import { Table } from '$lib/index.js';
+	import type { IShowcaseTableData } from './types.js';
 	export let title: string;
 	export let data: IShowcaseTableData[] = [];
 	export let events: boolean = false;
@@ -23,9 +23,7 @@
 			{#each data as row}
 				<tr>
 					{#if row.isGroupHeader}
-						<td colspan={events ? 2 : 4}
-							><caption>{row.name}</caption></td
-						>
+						<td colspan={events ? 2 : 4}><strong>{row.name}</strong></td>
 					{:else}
 						<td><code>{row.name}</code></td>
 						<td>{row.description}</td>
@@ -39,7 +37,7 @@
 			{#if data?.length === 0}
 				<tr>
 					<td colspan={events ? 2 : 4}>
-						No {events ? "Events" : "Component Options"}
+						No {events ? 'Events' : 'Component Options'}
 					</td>
 				</tr>
 			{/if}
