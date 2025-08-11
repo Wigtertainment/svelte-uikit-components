@@ -19,3 +19,4 @@ export * from './spinner/index.js';
 export * from './totop/index.js';
 export * from './section/index.js';
 export * from './off-canvas/index.js';
+export * from './progress/index.js';
