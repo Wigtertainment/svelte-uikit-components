@@ -33,7 +33,7 @@
 		"!dist/**/*.spec.*"
 	],
 	"peerDependencies": {
-		"svelte": "^5.38.0",
+		"svelte": "^5.53.0",
 		"uikit": "^3.23.11"
 	},
 	"devDependencies": {
@@ -43,7 +43,7 @@
 		"@sveltejs/package": "^2.4.1",
 		"prettier": "^3.6.2",
 		"publint": "^0.3.12",
-		"svelte": "^5.38.0",
+		"svelte": "^5.53.0",
 		"svelte-check": "^4.3.1",
 		"tslib": "^2.8.1",
 		"typescript": "^5.2.2",
