@@ -34,7 +34,7 @@
 	],
 	"peerDependencies": {
 		"svelte": "^5.53.5",
-		"uikit": "^3.23.11"
+		"uikit": "^3.25.13"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^6.0.2",

@@ -38,9 +38,9 @@
 	{@html github}
 </svelte:head>
 
-<nav uk-sticky class="uk-navbar-container uk-sticky uk-active uk-sticky-below uk-sticky-fixed">
+<div uk-sticky class="uk-navbar-container uk-sticky uk-active uk-sticky-below uk-sticky-fixed">
 	<div class="uk-container">
-		<div uk-navbar class="uk-navbar">
+		<nav uk-navbar class="uk-navbar">
 			<div class="uk-navbar-center">
 				<div class="uk-navbar-center-left">
 					<a class="uk-navbar-toggle uk-hidden@m" uk-navbar-toggle-icon uk-toggle href="#offcanvas-slide" />
@@ -61,9 +61,9 @@
 					</ul>
 				</div>
 			</div>
-		</div>
+		</nav>
 	</div>
-</nav>
+</div>
 <div class="tm-sidebar-left uk-visible@m">
 	<h3>Getting Started</h3>
 	<Nav items={gettingStartedNavItems} />
