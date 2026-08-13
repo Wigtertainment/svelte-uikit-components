@@ -16,10 +16,10 @@
 
 Coverage is compared against the 81 components in the current [UIkit documentation](https://getuikit.com/docs/introduction).
 
-- ✅ **Implemented and documented:** 23
+- ✅ **Implemented and documented:** 24
 - ⚠️ **Implemented without a showcase page:** 1 (`Table`)
-- ❌ **Not implemented:** 57
-- **Overall wrapper coverage:** 24 / 81 (29.6%)
+- ❌ **Not implemented:** 56
+- **Overall wrapper coverage:** 25 / 81 (30.9%)
 
 `ButtonGroup` is included in the `Button` row because UIkit documents it as a Button variation rather than a separate component. `Tooltip` is exposed as a Svelte action instead of a component.
 
@@ -46,7 +46,7 @@ Coverage is compared against the 81 components in the current [UIkit documentati
 | [Divider](https://getuikit.com/docs/divider) | — | — | ❌ |
 | [Dotnav](https://getuikit.com/docs/dotnav) | — | — | ❌ |
 | [Drop](https://getuikit.com/docs/drop) | — | — | ❌ |
-| [Dropbar](https://getuikit.com/docs/dropbar) | — | — | ❌ |
+| [Dropbar](https://getuikit.com/docs/dropbar) | `Dropbar`, `DropbarAnimation`, `DropbarDirection`, `DropbarMode`, `DropbarPosition`, `DropbarStretch` | [Demo](https://svelte-uikit.wigtertainment.com/dropbar) | ✅ |
 | [Dropdown](https://getuikit.com/docs/dropdown) | `DropDown` | [Demo](https://svelte-uikit.wigtertainment.com/dropdown) | ✅ |
 | [Dropnav](https://getuikit.com/docs/dropnav) | — | — | ❌ |
 | [Filter](https://getuikit.com/docs/filter) | — | — | ❌ |
