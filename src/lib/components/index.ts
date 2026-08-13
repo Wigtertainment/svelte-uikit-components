@@ -15,6 +15,7 @@ export * from './nav/index.js';
 export * from './tab/index.js';
 export * from './table/index.js';
 export * from './text/index.js';
+export * from './toggle/index.js';
 export * from './spinner/index.js';
 export * from './totop/index.js';
 export * from './section/index.js';

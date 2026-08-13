@@ -28,7 +28,8 @@
 		{ ident: '19', text: 'Spinner', href: `/spinner` },
 		{ ident: '20', text: 'Tab', href: `/tab` },
 		{ ident: '21', text: 'Text', href: `/text` },
-		{ ident: '22', text: 'Totop', href: `/totop` },
+		{ ident: '22', text: 'Toggle', href: `/toggle` },
+		{ ident: '23', text: 'Totop', href: `/totop` },
 	];
 
 	let gettingStartedNavItems: INavItem[] = [{ ident: '1', text: 'Introduction', href: `/getting-started` }];

@@ -16,10 +16,10 @@
 
 Coverage is compared against the 81 components in the current [UIkit documentation](https://getuikit.com/docs/introduction).
 
-- ✅ **Implemented and documented:** 22
+- ✅ **Implemented and documented:** 23
 - ⚠️ **Implemented without a showcase page:** 1 (`Table`)
-- ❌ **Not implemented:** 58
-- **Overall wrapper coverage:** 23 / 81 (28.4%)
+- ❌ **Not implemented:** 57
+- **Overall wrapper coverage:** 24 / 81 (29.6%)
 
 `ButtonGroup` is included in the `Button` row because UIkit documents it as a Button variation rather than a separate component. `Tooltip` is exposed as a Svelte action instead of a component.
 
@@ -97,7 +97,7 @@ Coverage is compared against the 81 components in the current [UIkit documentati
 | [Text](https://getuikit.com/docs/text) | `Text` | [Demo](https://svelte-uikit.wigtertainment.com/text) | ✅ |
 | [Thumbnav](https://getuikit.com/docs/thumbnav) | — | — | ❌ |
 | [Tile](https://getuikit.com/docs/tile) | — | — | ❌ |
-| [Toggle](https://getuikit.com/docs/toggle) | — | — | ❌ |
+| [Toggle](https://getuikit.com/docs/toggle) | `Toggle`, `ToggleAnimation`, `ToggleMedia`, `ToggleMode` | [Demo](https://svelte-uikit.wigtertainment.com/toggle) | ✅ |
 | [Tooltip](https://getuikit.com/docs/tooltip) | `tooltip` action, `TooltipOptions` | [Demo](https://svelte-uikit.wigtertainment.com/tooltip-action) | ✅ |
 | [Totop](https://getuikit.com/docs/totop) | `Totop` | [Demo](https://svelte-uikit.wigtertainment.com/totop) | ✅ |
 | [Transition](https://getuikit.com/docs/transition) | — | — | ❌ |
