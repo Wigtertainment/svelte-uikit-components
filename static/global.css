@@ -41,3 +41,7 @@ h3,
 .uk-breadcrumb>*>* {
 	color: #666;
 }
+
+.tm-main pre {
+	font-size: 14px;
+}
