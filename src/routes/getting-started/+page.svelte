@@ -1,15 +1,13 @@
 <script lang="ts">
-	import Highlight from 'svelte-highlight';
+	import Highlight, { HighlightSvelte } from 'svelte-highlight';
 	import markdown from 'svelte-highlight/languages/markdown';
 	import css from 'svelte-highlight/languages/css';
 
-	let code = `
-<script>
+	let code = `<${'script'}>
 	import { Button } from "svelte-uikit-components";
-<\/script>
+<${'/script'}>
 
-<Button label="Click Me" style="danger">
-    `;
+<Button label="Click Me" style="danger" />`;
 </script>
 
 <h3>Installation</h3>
@@ -19,4 +17,4 @@
 <Highlight language={css} code={'@import "../../node_modules/uikit/dist/css/uikit.min.css";'} />
 <h3>Example Usages</h3>
 <h4>Button</h4>
-<Highlight language={markdown} {code} />
+<HighlightSvelte {code} />
