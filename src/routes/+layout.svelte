@@ -1,39 +1,42 @@
 <script lang="ts">
 	import Nav from '$lib/components/nav/nav.svelte';
+	import { asset, resolve } from '$app/paths';
 	import type { INavItem } from '../lib/index.js';
 	import github from 'svelte-highlight/styles/github';
 
 	let navItems: INavItem[] = [
 		{ ident: '', text: 'ACTIONS', isHeader: true },
-		{ ident: '30', text: 'Tooltip', href: `/tooltip-action` },
+		{ ident: '30', text: 'Tooltip', href: `${resolve('/tooltip-action')}/` },
 		{ ident: '', text: 'COMPONENTS', isHeader: true },
-		{ ident: '1', text: 'Accordion', href: `/accordion` },
-		{ ident: '2', text: 'Article', href: `/article` },
-		{ ident: '3', text: 'Alert', href: `/alert` },
-		{ ident: '4', text: 'Badge', href: `/badge` },
-		{ ident: '5', text: 'Breadcrumb', href: `/breadcrumb` },
-		{ ident: '6', text: 'Button', href: `/button` },
-		{ ident: '7', text: 'Button Group', href: `/button-group` },
-		{ ident: '8', text: 'Card', href: `/card` },
-		{ ident: '9', text: 'Comment', href: `/comment` },
-		{ ident: '10', text: 'Countdown', href: `/countdown` },
-		{ ident: '11', text: 'Description List', href: `/description-list` },
-		{ ident: '12', text: 'Dropbar', href: `/dropbar` },
-		{ ident: '13', text: 'DropDown', href: `/dropdown` },
-		{ ident: '14', text: 'Heading', href: `/heading` },
-		{ ident: '15', text: 'Label', href: `/label` },
-		{ ident: '16', text: 'Nav', href: `/nav` },
-		{ ident: '17', text: 'Off-Canvas', href: `/off-canvas` },
-		{ ident: '18', text: 'Progress', href: `/progress` },
-		{ ident: '19', text: 'Section', href: `/section` },
-		{ ident: '20', text: 'Spinner', href: `/spinner` },
-		{ ident: '21', text: 'Tab', href: `/tab` },
-		{ ident: '22', text: 'Text', href: `/text` },
-		{ ident: '23', text: 'Toggle', href: `/toggle` },
-		{ ident: '24', text: 'Totop', href: `/totop` },
+		{ ident: '1', text: 'Accordion', href: `${resolve('/accordion')}/` },
+		{ ident: '2', text: 'Article', href: `${resolve('/article')}/` },
+		{ ident: '3', text: 'Alert', href: `${resolve('/alert')}/` },
+		{ ident: '4', text: 'Badge', href: `${resolve('/badge')}/` },
+		{ ident: '5', text: 'Breadcrumb', href: `${resolve('/breadcrumb')}/` },
+		{ ident: '6', text: 'Button', href: `${resolve('/button')}/` },
+		{ ident: '7', text: 'Button Group', href: `${resolve('/button-group')}/` },
+		{ ident: '8', text: 'Card', href: `${resolve('/card')}/` },
+		{ ident: '9', text: 'Comment', href: `${resolve('/comment')}/` },
+		{ ident: '10', text: 'Countdown', href: `${resolve('/countdown')}/` },
+		{ ident: '11', text: 'Description List', href: `${resolve('/description-list')}/` },
+		{ ident: '12', text: 'Dropbar', href: `${resolve('/dropbar')}/` },
+		{ ident: '13', text: 'DropDown', href: `${resolve('/dropdown')}/` },
+		{ ident: '14', text: 'Heading', href: `${resolve('/heading')}/` },
+		{ ident: '15', text: 'Label', href: `${resolve('/label')}/` },
+		{ ident: '16', text: 'Nav', href: `${resolve('/nav')}/` },
+		{ ident: '17', text: 'Off-Canvas', href: `${resolve('/off-canvas')}/` },
+		{ ident: '18', text: 'Progress', href: `${resolve('/progress')}/` },
+		{ ident: '19', text: 'Section', href: `${resolve('/section')}/` },
+		{ ident: '20', text: 'Spinner', href: `${resolve('/spinner')}/` },
+		{ ident: '21', text: 'Tab', href: `${resolve('/tab')}/` },
+		{ ident: '22', text: 'Text', href: `${resolve('/text')}/` },
+		{ ident: '23', text: 'Toggle', href: `${resolve('/toggle')}/` },
+		{ ident: '24', text: 'Totop', href: `${resolve('/totop')}/` },
 	];
 
-	let gettingStartedNavItems: INavItem[] = [{ ident: '1', text: 'Introduction', href: `/getting-started` }];
+	let gettingStartedNavItems: INavItem[] = [
+		{ ident: '1', text: 'Introduction', href: `${resolve('/getting-started')}/` },
+	];
 </script>
 
 <svelte:head>
@@ -52,8 +55,8 @@
 						</li>
 					</ul>
 				</div>
-				<a class="uk-navbar-item uk-logo" href="/#" alt="Back to Home">
-					<img src="./svelte-uikit-no-bg.png" alt="Svelte UiKit Components Logo" width="50" />
+				<a class="uk-navbar-item uk-logo" href={resolve('/')} alt="Back to Home">
+					<img src={asset('/svelte-uikit-no-bg.png')} alt="Svelte UiKit Components Logo" width="50" />
 				</a>
 				<div class="uk-navbar-center-right">
 					<ul class="uk-navbar-nav">

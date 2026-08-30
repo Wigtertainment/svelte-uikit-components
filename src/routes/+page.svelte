@@ -1,9 +1,10 @@
 <script lang="ts">
 	import { Button } from '$lib/index.js';
 	import { goto } from '$app/navigation';
+	import { resolve } from '$app/paths';
 
 	function navigate() {
-		goto('/getting-started');
+		goto(`${resolve('/getting-started')}/`);
 	}
 </script>
 
