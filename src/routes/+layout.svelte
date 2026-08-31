@@ -58,6 +58,7 @@
 		{ ident: '6', text: 'Button', href: `${resolve('/button')}/` },
 		{ ident: '7', text: 'Button Group', href: `${resolve('/button-group')}/` },
 		{ ident: '8', text: 'Card', href: `${resolve('/card')}/` },
+		{ ident: '25', text: 'Close', href: `${resolve('/close')}/` },
 		{ ident: '9', text: 'Comment', href: `${resolve('/comment')}/` },
 		{ ident: '10', text: 'Countdown', href: `${resolve('/countdown')}/` },
 		{ ident: '11', text: 'Description List', href: `${resolve('/description-list')}/` },

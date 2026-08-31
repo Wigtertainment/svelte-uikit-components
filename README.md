@@ -36,7 +36,7 @@ Coverage is compared against the 81 components in the current [UIkit documentati
 | [Breadcrumb](https://getuikit.com/docs/breadcrumb) | `Breadcrumb`, `BreadcrumbItem` | [Demo](https://svelte-uikit.wigtertainment.com/breadcrumb) | ✅ |
 | [Button](https://getuikit.com/docs/button) | `Button`, `ButtonGroup` | [Button](https://svelte-uikit.wigtertainment.com/button), [Button Group](https://svelte-uikit.wigtertainment.com/button-group) | ✅ |
 | [Card](https://getuikit.com/docs/card) | `Card`, `CardMedia`, `CardHeader`, `CardContent`, `CardFooter` | [Demo](https://svelte-uikit.wigtertainment.com/card) | ✅ |
-| [Close](https://getuikit.com/docs/close) | — | — | ❌ |
+| [Close](https://getuikit.com/docs/close) | `Close` | [Demo](https://svelte-uikit.wigtertainment.com/close) | ✅ |
 | [Column](https://getuikit.com/docs/column) | — | — | ❌ |
 | [Comment](https://getuikit.com/docs/comment) | `Comment`, `CommentAvatar`, `CommentBody`, `CommentHeader`, `CommentMetaList`, `CommentTitle` | [Demo](https://svelte-uikit.wigtertainment.com/comment) | ✅ |
 | [Container](https://getuikit.com/docs/container) | — | — | ❌ |

@@ -5,6 +5,7 @@ export * from './badge/index.js';
 export * from './button/index.js';
 export * from './breadcrumb/index.js';
 export * from './card/index.js';
+export * from './close/index.js';
 export * from './comment/index.js';
 export * from './countdown/index.js';
 export * from './description-list/index.js';
