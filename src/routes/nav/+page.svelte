@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { HighlightSvelte } from 'svelte-highlight';
-	import { Nav, type INavItem, Tabset, Tab, TabContent } from '$lib/index.js';
+	import { Nav, type INavItem, Tabset, Tab, TabContent } from '#lib/index.js';
 	import ShowcaseOptEvents from '../shared/showcase-opt-events.svelte';
 
 	let items: INavItem[] = [

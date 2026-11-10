@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Table } from '$lib/index.js';
+	import { Table } from '#lib/index.js';
 	import type { IShowcaseTableData } from './types.js';
 	export let title: string;
 	export let data: IShowcaseTableData[] = [];

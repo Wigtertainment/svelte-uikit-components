@@ -1,14 +1,16 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import Nav from '$lib/components/nav/nav.svelte';
+	import Nav from '#lib/components/nav/nav.svelte';
 	import { asset, resolve } from '$app/paths';
 	import type { INavItem } from '../lib/index.js';
 	import github from 'svelte-highlight/styles/github';
+	import uikitStyles from 'uikit/dist/css/uikit.min.css?url';
 
 	const themeStorageKey = 'svelte-uikit-theme';
 	type Theme = 'light' | 'dark';
 
 	let darkMode = false;
+	let mounted = false;
 
 	function setTheme(theme: Theme, persist = false): void {
 		darkMode = theme === 'dark';
@@ -29,6 +31,7 @@
 	}
 
 	onMount(() => {
+		mounted = true;
 		const mediaQuery = matchMedia('(prefers-color-scheme: dark)');
 		darkMode = document.documentElement.dataset.theme === 'dark';
 
@@ -81,10 +84,11 @@
 </script>
 
 <svelte:head>
+	<link rel="stylesheet" href={uikitStyles} />
 	{@html github}
 </svelte:head>
 
-<div uk-sticky class="uk-navbar-container uk-sticky uk-active uk-sticky-below uk-sticky-fixed">
+<div uk-sticky={mounted ? '' : undefined} class="uk-navbar-container uk-sticky uk-active uk-sticky-below uk-sticky-fixed">
 	<div class="uk-container">
 		<nav uk-navbar class="uk-navbar">
 			<div class="uk-navbar-center">
@@ -97,7 +101,7 @@
 					</ul>
 				</div>
 				<a class="uk-navbar-item uk-logo" href={resolve('/')} alt="Back to Home">
-					<img src={asset('/svelte-uikit-no-bg.png')} alt="Svelte UiKit Components Logo" width="50" />
+					<img src={asset('svelte-uikit-no-bg.png')} alt="Svelte UiKit Components Logo" width="50" />
 				</a>
 				<div class="uk-navbar-center-right">
 					<ul class="uk-navbar-nav">

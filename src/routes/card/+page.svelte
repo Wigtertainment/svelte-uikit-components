@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { HighlightSvelte } from 'svelte-highlight';
-	import { Button, Card, CardHeader, CardFooter, CardContent, Tabset, Tab, TabContent, CardMedia } from '$lib/index.js';
+	import { Button, Card, CardHeader, CardFooter, CardContent, Tabset, Tab, TabContent, CardMedia } from '#lib/index.js';
 	import ShowcaseOptEvents from '../shared/showcase-opt-events.svelte';
 	import type { IShowcaseTableData } from '../shared/types.js';
 

@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { HighlightSvelte } from 'svelte-highlight';
-	import { AccordionItem, Accordion, Tabset, Tab, TabContent } from '$lib/index.js';
+	import { AccordionItem, Accordion, Tabset, Tab, TabContent } from '#lib/index.js';
 	import type { IShowcaseTableData } from '../shared/types.js';
 	import ShowcaseOptEvents from '../shared/showcase-opt-events.svelte';
 

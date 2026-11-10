@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Section, Tabset, Tab, TabContent } from '$lib/index.js';
+	import { Section, Tabset, Tab, TabContent } from '#lib/index.js';
 	import { HighlightSvelte } from 'svelte-highlight';
 	import type { IShowcaseTableData } from '../shared/types.js';
 	import ShowcaseOptEvents from '../shared/showcase-opt-events.svelte';

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Tab, TabContent, Tabset } from "$lib/index.js";
+	import { Tab, TabContent, Tabset } from "#lib/index.js";
 	import ShowcaseTable from "./showcase-table.svelte";
 	import type { IShowcaseTableData } from "./types.js";
 
