@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Article, ArticleMeta, ArticleTitle, Tabset, Tab, TabContent } from '$lib/index.js';
+	import { Article, ArticleMeta, ArticleTitle, Tabset, Tab, TabContent } from '#lib/index.js';
 	import { HighlightSvelte } from 'svelte-highlight';
 	import ShowcaseOptEvents from '../shared/showcase-opt-events.svelte';
 

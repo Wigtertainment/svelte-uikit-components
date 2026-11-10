@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { HighlightSvelte } from 'svelte-highlight';
-	import { Comment, CommentHeader, CommentAvatar, CommentTitle, CommentMetaList, CommentBody, Tabset, Tab, TabContent } from '$lib/index.js';
+	import { Comment, CommentHeader, CommentAvatar, CommentTitle, CommentMetaList, CommentBody, Tabset, Tab, TabContent } from '#lib/index.js';
 	import ShowcaseOptEvents from '../shared/showcase-opt-events.svelte';
 
 	let code = `

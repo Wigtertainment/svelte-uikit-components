@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { HighlightSvelte } from 'svelte-highlight';
-	import { Button, ButtonGroup, Tabset, Tab, TabContent } from '$lib/index.js';
+	import { Button, ButtonGroup, Tabset, Tab, TabContent } from '#lib/index.js';
 	import ShowcaseOptEvents from '../shared/showcase-opt-events.svelte';
 
 	let code = `
