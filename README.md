@@ -16,10 +16,10 @@
 
 Coverage is compared against the 81 components in the current [UIkit documentation](https://getuikit.com/docs/introduction).
 
-- ✅ **Implemented and documented:** 24
+- ✅ **Implemented and documented:** 26
 - ⚠️ **Implemented without a showcase page:** 1 (`Table`)
-- ❌ **Not implemented:** 56
-- **Overall wrapper coverage:** 25 / 81 (30.9%)
+- ❌ **Not implemented:** 54
+- **Overall wrapper coverage:** 27 / 81 (33.3%)
 
 `ButtonGroup` is included in the `Button` row because UIkit documents it as a Button variation rather than a separate component. `Tooltip` is exposed as a Svelte action instead of a component.
 
@@ -55,7 +55,7 @@ Coverage is compared against the 81 components in the current [UIkit documentati
 | [Grid](https://getuikit.com/docs/grid) | — | — | ❌ |
 | [Heading](https://getuikit.com/docs/heading) | `Heading` | [Demo](https://svelte-uikit.wigtertainment.com/heading) | ✅ |
 | [Height](https://getuikit.com/docs/height) | — | — | ❌ |
-| [Icon](https://getuikit.com/docs/icon) | — | — | ❌ |
+| [Icon](https://getuikit.com/docs/icon) | `Icon` | [Demo](https://svelte-uikit.wigtertainment.com/icon) | ✅ |
 | [Iconnav](https://getuikit.com/docs/iconnav) | — | — | ❌ |
 | [Image](https://getuikit.com/docs/image) | — | — | ❌ |
 | [Inverse](https://getuikit.com/docs/inverse) | — | — | ❌ |
