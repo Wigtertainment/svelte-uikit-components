@@ -70,6 +70,7 @@
 		{ ident: '14', text: 'Heading', href: `${resolve('/heading')}/` },
 		{ ident: '26', text: 'Icon', href: `${resolve('/icon')}/` },
 		{ ident: '15', text: 'Label', href: `${resolve('/label')}/` },
+		{ ident: '27', text: 'Modal', href: `${resolve('/modal')}/` },
 		{ ident: '16', text: 'Nav', href: `${resolve('/nav')}/` },
 		{ ident: '17', text: 'Off-Canvas', href: `${resolve('/off-canvas')}/` },
 		{ ident: '18', text: 'Progress', href: `${resolve('/progress')}/` },

@@ -141,6 +141,8 @@ html[data-theme='dark'] .uk-breadcrumb > * > * {
 
 html[data-theme='dark'] .tm-nav .uk-nav-header,
 html[data-theme='dark'] .uk-tab::before,
+html[data-theme='dark'] .uk-modal-header,
+html[data-theme='dark'] .uk-modal-footer,
 html[data-theme='dark'] .uk-table-divider > tr:not(:first-child),
 html[data-theme='dark'] .uk-table-divider > :not(:first-child) > tr,
 html[data-theme='dark'] .uk-table-divider > :first-child > tr:not(:first-child) {
@@ -216,6 +218,8 @@ html[data-theme='dark'] .uk-card-default,
 html[data-theme='dark'] .uk-dropdown,
 html[data-theme='dark'] .uk-dropbar,
 html[data-theme='dark'] .uk-modal-dialog,
+html[data-theme='dark'] .uk-modal-header,
+html[data-theme='dark'] .uk-modal-footer,
 html[data-theme='dark'] .uk-background-default,
 html[data-theme='dark'] .uk-background-muted {
 	color: #c9d1d9;

@@ -16,10 +16,10 @@
 
 Coverage is compared against the 81 components in the current [UIkit documentation](https://getuikit.com/docs/introduction).
 
-- ✅ **Implemented and documented:** 26
+- ✅ **Implemented and documented:** 27
 - ⚠️ **Implemented without a showcase page:** 1 (`Table`)
-- ❌ **Not implemented:** 54
-- **Overall wrapper coverage:** 27 / 81 (33.3%)
+- ❌ **Not implemented:** 53
+- **Overall wrapper coverage:** 28 / 81 (34.6%)
 
 `ButtonGroup` is included in the `Button` row because UIkit documents it as a Button variation rather than a separate component. `Tooltip` is exposed as a Svelte action instead of a component.
 
@@ -66,7 +66,7 @@ Coverage is compared against the 81 components in the current [UIkit documentati
 | [List](https://getuikit.com/docs/list) | — | — | ❌ |
 | [Margin](https://getuikit.com/docs/margin) | — | — | ❌ |
 | [Marker](https://getuikit.com/docs/marker) | — | — | ❌ |
-| [Modal](https://getuikit.com/docs/modal) | — | — | ❌ |
+| [Modal](https://getuikit.com/docs/modal) | `Modal` | [Demo](https://svelte-uikit.wigtertainment.com/modal) | ✅ |
 | [Nav](https://getuikit.com/docs/nav) | `Nav`, `NavItem` | [Demo](https://svelte-uikit.wigtertainment.com/nav) | ✅ |
 | [Navbar](https://getuikit.com/docs/navbar) | — | — | ❌ |
 | [Notification](https://getuikit.com/docs/notification) | — | — | ❌ |

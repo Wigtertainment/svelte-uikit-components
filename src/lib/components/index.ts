@@ -14,6 +14,7 @@ export * from './dropdown/index.js';
 export * from './heading/index.js';
 export * from './icon/index.js';
 export * from './label/index.js';
+export * from './modal/index.js';
 export * from './nav/index.js';
 export * from './tab/index.js';
 export * from './table/index.js';
