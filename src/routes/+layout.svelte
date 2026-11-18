@@ -68,6 +68,7 @@
 		{ ident: '12', text: 'Dropbar', href: `${resolve('/dropbar')}/` },
 		{ ident: '13', text: 'DropDown', href: `${resolve('/dropdown')}/` },
 		{ ident: '14', text: 'Heading', href: `${resolve('/heading')}/` },
+		{ ident: '26', text: 'Icon', href: `${resolve('/icon')}/` },
 		{ ident: '15', text: 'Label', href: `${resolve('/label')}/` },
 		{ ident: '16', text: 'Nav', href: `${resolve('/nav')}/` },
 		{ ident: '17', text: 'Off-Canvas', href: `${resolve('/off-canvas')}/` },
